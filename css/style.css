@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+:root {
+    --text-color: #fff;
+    --bg-color: #0563bb;
+    --bg-hover: #f2f3f5;
+    --black: #080808e3;
+}
+
+ion-icon {
+    margin-left: -2px;
+    font-size: 1.7rem;
+    color: var(--black);
+}
+
+
+.active {
+    color: var(--text-color);
+    background: var(--bg-color) !important;
+}
+
+
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 0px 10px;
+    z-index: 9997;
+    overflow-y: auto;
+}
+
+.header-section {
+    height: 100vh;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.nav ul .link-list {
+    list-style: none;
+    position: relative;
+    width: 40%;
+    transition: all 0.5s;
+    border-radius: 3px;
+    background-color: var(--bg-hover);
+    box-shadow: 0px 1px 6px -3px var(--black);
+}
+
+
+.nav .link-list .link {
+    width: 120px;
+    height: 53px;
+    text-decoration: none;
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    padding: 13px;
+    overflow: hidden;
+    color: var(--text-color);
+}
+
+
+/* Hero-Section */
+.hero-section {
+    width: 80%;
+    height: 100vh;
+    /* background-image: radial-gradient(rgba(71, 74, 255, 0.17) 1px, transparent 1px), radial-gradient(rgba(71, 74, 255, 0.17) 1px, transparent 1px);
+    background-size: 14px 14px;
+    background-position: 0 0, 7px 7px;
+    background-color: rgba(3, 183, 255, 0.17); */
+}
