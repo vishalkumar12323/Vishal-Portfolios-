@@ -1,3 +1,3 @@
 # Vishal-Portfolios-
 
-Template created using html, tailwind css, typescript, and vite
+Template created using html, tailwind css, javascript, and vite
