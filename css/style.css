@@ -32,9 +32,11 @@ li {
 
 .section {
     padding: 10rem 9rem;
+    overflow: hidden;
 }
 
 
+/* Header-Section  */
 #header {
     position: fixed;
     top: 0;
@@ -122,4 +124,37 @@ li {
 
 .left .social-link .s-link ion-icon:hover {
     color: var(--bg-color);
+}
+
+/* Skill-Section */
+/* .skill-section {
+
+} */
+
+.skill-section .section-title h2 {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.section-title h2::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    width: 100px;
+    height: 2px;
+    margin: 0 auto;
+    background-color: var(--bg-hover);
+}
+
+.section-title h2::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    width: 30px;
+    height: 2px;
+    margin: 0 auto;
+    background-color: var(--bg-color);
 }
