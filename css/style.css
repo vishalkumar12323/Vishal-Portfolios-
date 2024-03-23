@@ -21,12 +21,18 @@ ion-icon {
     color: var(--black);
 }
 
+li {
+    list-style: none;
+}
 
 .active {
     color: var(--text-color);
     background: var(--bg-color) !important;
 }
 
+.section {
+    padding: 10rem 9rem;
+}
 
 
 #header {
@@ -54,7 +60,6 @@ ion-icon {
 }
 
 .nav ul .link-list {
-    list-style: none;
     position: relative;
     width: 40%;
     transition: all 0.5s;
@@ -79,10 +84,42 @@ ion-icon {
 
 /* Hero-Section */
 .hero-section {
-    width: 80%;
     height: 100vh;
-    /* background-image: radial-gradient(rgba(71, 74, 255, 0.17) 1px, transparent 1px), radial-gradient(rgba(71, 74, 255, 0.17) 1px, transparent 1px);
-    background-size: 14px 14px;
-    background-position: 0 0, 7px 7px;
-    background-color: rgba(3, 183, 255, 0.17); */
+    display: flex;
+    align-items: center;
+}
+
+.hero-section .container {
+    margin: 1.2rem 1.5rem;
+}
+
+.flex-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.flex-box .left .my-name {
+    font-size: 3.5rem;
+}
+
+.flex-box .left .about {
+    font-size: 1.5rem;
+    padding-left: 10px;
+}
+
+.left .social-link ul {
+    margin-top: 1rem;
+    display: flex;
+    gap: 20px;
+}
+
+.left .social-link .s-link {
+    text-decoration: none;
+    transition: all 0.2s ease;
+    padding-left: 10px;
+}
+
+.left .social-link .s-link ion-icon:hover {
+    color: var(--bg-color);
 }
