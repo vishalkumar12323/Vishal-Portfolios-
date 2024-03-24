@@ -150,6 +150,7 @@ li {
 
 } */
 
+
 .skill-section .section-title h2 {
     font-size: 2rem;
     justify-content: center;
@@ -175,6 +176,10 @@ li {
     height: 2px;
     margin: 0 auto;
     background-color: var(--bg-color);
+}
+
+.skills {
+    margin-top: 1.5rem;
 }
 
 .skill-box {

@@ -12,6 +12,6 @@ export function progressBar() {
         element.firstElementChild.style.width = `${endWidth}%`;
       }
     }
-    const intervalTime = setInterval(loading, 500);
+    const intervalTime = setInterval(loading, 400);
   });
 }
