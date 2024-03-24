@@ -15,6 +15,12 @@
     --black: #080808e3;
 }
 
+
+::selection {
+    color: var(--bg-hover);
+    background-color: var(--black);
+}
+
 ion-icon {
     margin-left: -2px;
     font-size: 1.7rem;
@@ -25,6 +31,8 @@ li {
     list-style: none;
 }
 
+
+/* Reuseable Classes */
 .active {
     color: var(--text-color);
     background: var(--bg-color) !important;
@@ -35,6 +43,25 @@ li {
     overflow: hidden;
 }
 
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-two-cols {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.select {
+    user-select: none;
+}
 
 /* Header-Section  */
 #header {
@@ -49,16 +76,13 @@ li {
 
 .header-section {
     height: 100vh;
-    display: flex !important;
     justify-content: center !important;
     align-items: center !important;
 }
 
 .nav ul {
-    display: flex;
     justify-content: center;
     gap: 20px;
-    flex-direction: column;
 }
 
 .nav ul .link-list {
@@ -75,7 +99,6 @@ li {
     width: 120px;
     height: 53px;
     text-decoration: none;
-    display: flex;
     gap: 7px;
     align-items: center;
     padding: 13px;
@@ -87,7 +110,6 @@ li {
 /* Hero-Section */
 .hero-section {
     height: 100vh;
-    display: flex;
     align-items: center;
 }
 
@@ -96,9 +118,7 @@ li {
 }
 
 .flex-box {
-    display: flex;
     justify-content: center;
-    flex-direction: column;
 }
 
 .flex-box .left .my-name {
@@ -112,7 +132,6 @@ li {
 
 .left .social-link ul {
     margin-top: 1rem;
-    display: flex;
     gap: 20px;
 }
 
@@ -133,7 +152,6 @@ li {
 
 .skill-section .section-title h2 {
     font-size: 2rem;
-    display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -157,4 +175,92 @@ li {
     height: 2px;
     margin: 0 auto;
     background-color: var(--bg-color);
+}
+
+.skill-box {
+    width: 100% !important;
+    margin: 1rem 0;
+    padding: 1rem 0;
+    gap: 1.5rem;
+    place-items: start;
+}
+
+.box {
+    width: 100%;
+}
+
+.skill-box .progress {
+    padding: 6px 1px;
+}
+
+.progress .title {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.progress .tech-name {
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+.progress .val {
+    font-weight: 600;
+}
+
+.progress .progress-bar {
+    width: 100%;
+    height: 10px;
+    margin: 5px 0px;
+    background-color: var(--bg-hover);
+}
+
+.red {
+    color: red;
+    margin-top: 4px;
+}
+
+.blue {
+    color: var(--bg-color);
+    margin-top: 4px;
+}
+
+.green {
+    color: #0f9e0f;
+}
+
+.yellow {
+    color: #ffd900;
+}
+
+.size {
+    font-size: 1.3rem;
+}
+
+.ts-logo {
+    background-color: var(--bg-color);
+    position: relative;
+    border-radius: 3px;
+}
+
+.ts-logo .typescript {
+    text-transform: uppercase;
+    color: white;
+    font-size: 11px;
+    padding: 4px;
+}
+
+.percentage {
+    width: 0%;
+    height: 100%;
+    display: flex;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+    transition: all 3s;
 }

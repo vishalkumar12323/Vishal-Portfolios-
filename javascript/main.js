@@ -1,3 +1,5 @@
+import { progressBar } from "./progress-bar";
+
 const linkList = document.querySelectorAll(".link-list");
 const icons = document.querySelectorAll(".icons");
 
@@ -14,3 +16,5 @@ for (let i = 0; i < linkList.length; i++) {
     icons[i].style.color = "#000";
   });
 }
+
+progressBar();

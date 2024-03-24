@@ -7,52 +7,52 @@
     <title>Vishal Kumar Portfolios</title>
   </head>
   <body>
-    <header id="header" class="header-section">
+    <header id="header" class="header-section flex">
       <nav id="navbar" class="nav">
-        <ul>
+        <ul class="flex flex-col">
           <li class="link-list">
-            <a href="#" class="link">
+            <a href="#" class="link flex">
               <ion-icon name="home-outline" class="icons"></ion-icon>
-              <span class="">Home</span>
+              <span class="select">Home</span>
             </a>
           </li>
           <li class="link-list">
-            <a href="#" class="link">
+            <a href="#" class="link flex">
               <ion-icon name="code-slash-outline" class="icons"></ion-icon>
-              <span>Skills</span>
+              <span class="select">Skills</span>
             </a>
           </li>
           <li class="link-list">
-            <a href="#" class="link">
+            <a href="#" class="link flex">
               <ion-icon name="document-outline" class="icons"></ion-icon>
-              <span>Resume</span>
+              <span class="select">Resume</span>
             </a>
           </li>
           <li class="link-list">
-            <a href="#" class="link">
+            <a href="#" class="link flex">
               <ion-icon name="library-outline" class="icons"></ion-icon>
-              <span>Projects</span>
+              <span class="select">Projects</span>
             </a>
           </li>
           <li class="link-list">
-            <a href="#" class="link">
+            <a href="#" class="link flex">
               <ion-icon name="mail-unread-outline" class="icons"></ion-icon>
-              <span>Contact</span>
+              <span class="select">Contact</span>
             </a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <main id="home" class="hero-section section">
+    <main id="home" class="hero-section section flex">
       <div class="container">
-        <div class="flex-box">
+        <div class="flex-box flex flex-col">
           <div class="left">
             <h1 class="my-name">vishal kumar</h1>
             <p class="about">i'm web developer</p>
 
             <div class="social-link">
-              <ul>
+              <ul class="flex">
                 <li>
                   <a
                     href="https://github.com/vishalkumar12323"
@@ -87,11 +87,105 @@
 
     <section class="section skill-section">
       <div class="section-title">
-        <h2>SKILLS</h2>
+        <h2 class="flex">SKILLS</h2>
       </div>
 
       <div class="skills">
-        <div class="grid grid-two-cols"></div>
+        <div class="grid grid-two-cols skill-box">
+          <div class="flex flex-col box">
+            <div class="progress">
+              <div class="title flex">
+                <span class="tech-name flex"
+                  >html 5
+                  <ion-icon name="logo-html5" class="red size"></ion-icon>
+                </span>
+                <span class="val">90%</span>
+              </div>
+              <div class="progress-bar" data-size="90">
+                <span class="percentage"></span>
+              </div>
+            </div>
+            <div class="progress">
+              <div class="title flex">
+                <span class="tech-name flex"
+                  >css 3
+                  <ion-icon name="logo-css3" class="blue size"></ion-icon>
+                </span>
+                <span class="val">70%</span>
+              </div>
+              <div class="progress-bar" data-size="70">
+                <span class="percentage"></span>
+              </div>
+            </div>
+            <div class="progress">
+              <div class="title flex">
+                <span class="tech-name flex"
+                  >javascript
+                  <ion-icon
+                    name="logo-javascript"
+                    class="yellow size"
+                  ></ion-icon>
+                </span>
+                <span class="val">60%</span>
+              </div>
+              <div class="progress-bar" data-size="60">
+                <span class="percentage"></span>
+              </div>
+            </div>
+            <div class="progress">
+              <div class="title flex">
+                <span class="tech-name flex"
+                  >typescript
+                  <div class="ts-logo">
+                    <span class="typescript">ts</span>
+                  </div>
+                </span>
+                <span class="val">65%</span>
+              </div>
+              <div class="progress-bar" data-size="65">
+                <span class="percentage"></span>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col box">
+            <div class="progress">
+              <div class="title flex">
+                <span class="tech-name flex"
+                  >react js
+                  <ion-icon name="logo-react" class="blue size"></ion-icon>
+                </span>
+                <span class="val">55%</span>
+              </div>
+              <div class="progress-bar" data-size="55">
+                <span class="percentage"></span>
+              </div>
+            </div>
+            <div class="progress">
+              <div class="title flex">
+                <span class="tech-name flex"
+                  >node js
+                  <ion-icon name="logo-nodejs" class="green size"></ion-icon>
+                </span>
+                <span class="val">50%</span>
+              </div>
+              <div class="progress-bar" data-size="50">
+                <span class="percentage"></span>
+              </div>
+            </div>
+            <div class="progress">
+              <div class="title flex">
+                <span class="tech-name flex"
+                  >mongo db
+                  <ion-icon name="leaf" class="green size"></ion-icon>
+                </span>
+                <span class="val">65%</span>
+              </div>
+              <div class="progress-bar" data-size="65">
+                <span class="percentage"></span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
