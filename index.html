@@ -11,25 +11,19 @@
       <nav id="navbar" class="nav">
         <ul class="flex flex-col">
           <li class="link-list">
-            <a href="#" class="link flex">
+            <a href="#home" class="link flex">
               <ion-icon name="home-outline" class="icons"></ion-icon>
               <span class="select">Home</span>
             </a>
           </li>
           <li class="link-list">
-            <a href="#" class="link flex">
+            <a href="#skill" class="link flex">
               <ion-icon name="code-slash-outline" class="icons"></ion-icon>
               <span class="select">Skills</span>
             </a>
           </li>
           <li class="link-list">
-            <a href="#" class="link flex">
-              <ion-icon name="document-outline" class="icons"></ion-icon>
-              <span class="select">Resume</span>
-            </a>
-          </li>
-          <li class="link-list">
-            <a href="#" class="link flex">
+            <a href="#project" class="link flex">
               <ion-icon name="library-outline" class="icons"></ion-icon>
               <span class="select">Projects</span>
             </a>
@@ -44,6 +38,7 @@
       </nav>
     </header>
 
+    <!-- Home Section -->
     <main id="home" class="hero-section section flex">
       <div class="container">
         <div class="flex-box flex flex-col">
@@ -85,9 +80,10 @@
       </div>
     </main>
 
+    <!-- Skill Section -->
     <section class="section skill-section">
       <div class="section-title">
-        <h2 class="flex">SKILLS</h2>
+        <h2 class="flex">skills</h2>
       </div>
 
       <div class="skills" id="skill">
@@ -102,7 +98,13 @@
                 <span class="val">90%</span>
               </div>
               <div class="progress-bar" data-size="90">
-                <span class="percentage"></span>
+                <span
+                  class="percentage"
+                  style="
+                    box-shadow: var(--red) 5px 0px 15px 0px;
+                    background: var(--red);
+                  "
+                ></span>
               </div>
             </div>
             <div class="progress">
@@ -114,7 +116,13 @@
                 <span class="val">70%</span>
               </div>
               <div class="progress-bar" data-size="70">
-                <span class="percentage"></span>
+                <span
+                  class="percentage"
+                  style="
+                    box-shadow: var(--bg-color) 5px 0px 15px 0px;
+                    background: var(--bg-color);
+                  "
+                ></span>
               </div>
             </div>
             <div class="progress">
@@ -129,7 +137,13 @@
                 <span class="val">60%</span>
               </div>
               <div class="progress-bar" data-size="60">
-                <span class="percentage"></span>
+                <span
+                  class="percentage"
+                  style="
+                    box-shadow: var(--yellow) 5px 0px 15px 0px;
+                    background: var(--yellow);
+                  "
+                ></span>
               </div>
             </div>
             <div class="progress">
@@ -143,7 +157,13 @@
                 <span class="val">65%</span>
               </div>
               <div class="progress-bar" data-size="65">
-                <span class="percentage"></span>
+                <span
+                  class="percentage"
+                  style="
+                    box-shadow: var(--bg-color) 5px 0px 15px 0px;
+                    background: var(--bg-color);
+                  "
+                ></span>
               </div>
             </div>
           </div>
@@ -157,7 +177,13 @@
                 <span class="val">55%</span>
               </div>
               <div class="progress-bar" data-size="55">
-                <span class="percentage"></span>
+                <span
+                  class="percentage"
+                  style="
+                    box-shadow: var(--bg-color) 5px 0px 15px 0px;
+                    background: var(--bg-color);
+                  "
+                ></span>
               </div>
             </div>
             <div class="progress">
@@ -169,7 +195,13 @@
                 <span class="val">50%</span>
               </div>
               <div class="progress-bar" data-size="50">
-                <span class="percentage"></span>
+                <span
+                  class="percentage"
+                  style="
+                    box-shadow: var(--green) 5px 0px 15px 0px;
+                    background: var(--green);
+                  "
+                ></span>
               </div>
             </div>
             <div class="progress">
@@ -181,7 +213,13 @@
                 <span class="val">65%</span>
               </div>
               <div class="progress-bar" data-size="65">
-                <span class="percentage"></span>
+                <span
+                  class="percentage"
+                  style="
+                    box-shadow: var(--green) 5px 0px 15px 0px;
+                    background: var(--green);
+                  "
+                ></span>
               </div>
             </div>
           </div>
@@ -189,6 +227,38 @@
       </div>
     </section>
 
+    <!-- Resume Section -->
+    <section class="section project-section" id="project">
+      <div class="section-title">
+        <h2 class="flex">projects</h2>
+      </div>
+
+      <div class="my-project">
+        <div class="grid grid-two-cols">
+          <div class="card">
+            <div class="card-head">
+              <img src="/images/img1.jpg" alt="project" />
+            </div>
+            <div class="card-body flex flex-col">
+              <p class="project-name">HTML PROJECT</p>
+              <p class="project-summary">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="project-link">
+                preview
+                <ion-icon name="link-outline"></ion-icon>
+              </a>
+              <a href="#" class="code-link">
+                source code
+                <ion-icon name="logo-github" size="small"></ion-icon>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <script type="module" src="javascript/main.js"></script>
     <script
       type="module"
