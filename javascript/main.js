@@ -25,7 +25,7 @@ const skillSectionObserver = new IntersectionObserver(
 
     console.log(ent);
     if (!ent.isIntersecting) return;
-    // progressBar();
+    progressBar();
 
     observer.unobserve(skillSection);
   },

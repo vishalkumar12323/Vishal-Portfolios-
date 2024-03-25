@@ -35,13 +35,17 @@ ion-icon {
     color: var(--black);
 }
 
+a {
+    text-decoration: none;
+}
+
 li {
     list-style: none;
 }
 
 img {
     width: 100%;
-    border-radius: 7px;
+    height: auto;
 }
 
 /* Reuseable Classes --------------------- */
@@ -139,7 +143,6 @@ img {
 .nav .link-list .link {
     width: 120px;
     height: 53px;
-    text-decoration: none;
     gap: 7px;
     align-items: center;
     padding: 13px;
@@ -285,18 +288,3 @@ img {
 }
 
 /* Project Section -------------- */
-
-.my-project {
-    margin-top: 2.5rem;
-}
-
-.card {
-    width: 100%;
-    padding: 10px;
-    background-color: var(--bg-hover);
-}
-
-.card-body {
-    padding: 20px 2px;
-    gap: 8px;
-}
