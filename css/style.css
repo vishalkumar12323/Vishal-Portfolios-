@@ -16,6 +16,7 @@
     --red: #ff0000;
     --green: #18af04;
     --yellow: #ffd000;
+    --transition: 0.5s;
 }
 
 
@@ -55,7 +56,7 @@ img {
 }
 
 .section {
-    padding: 10rem 9rem;
+    padding: 9rem 7.5rem 9rem 9rem;
     overflow: hidden;
 }
 
@@ -79,12 +80,27 @@ img {
     user-select: none;
 }
 
+.section-title {
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.section-title .paragraph {
+    --bg-hover: #535353e7;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 9px;
+    color: var(--bg-hover);
+}
+
 .section-title h2 {
     font-size: 2rem;
     justify-content: center;
     align-items: center;
     position: relative;
     text-transform: uppercase;
+
 }
 
 .section-title h2::before {
@@ -256,7 +272,6 @@ img {
 
 .yellow {
     color: var(--yellow);
-    /* box-shadow: var(--yellow) 0px 5px 10px; */
 }
 
 .size {
@@ -288,3 +303,114 @@ img {
 }
 
 /* Project Section -------------- */
+.project-container {
+    margin-top: 2.5rem;
+    padding: 1rem 1.5rem;
+}
+
+.project-container .cards {
+    gap: 15px;
+}
+
+.project-container .cards .card {
+    --bg-hover: #c1c1c1;
+    width: 25rem;
+    border-radius: 5px;
+    box-shadow: var(--bg-hover) 0px 0px 8px 0px;
+}
+
+.project-container .cards .card .card-head {
+    width: 100%;
+    position: relative;
+}
+
+
+.project-container .cards .card .card-head::before {
+    --bg-hover: #e0dddda6;
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background-color: var(--bg-hover);
+    transition: var(--transition);
+    /* z-index: 2; */
+    opacity: 0;
+}
+
+.project-container .cards .card .card-head .card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 98%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
+
+.project-container .cards .card .card-head .card-overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35px;
+    height: 35px;
+    border-left: 2px solid var(--bg-color);
+    border-top: 2px solid var(--bg-color);
+    transition: var(--transition);
+    opacity: 0;
+    z-index: 3;
+}
+
+.project-container .cards .card .card-head .card-overlay::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    width: 35px;
+    height: 35px;
+    border-right: 2px solid var(--bg-color);
+    border-bottom: 2px solid var(--bg-color);
+    transition: var(--transition);
+    opacity: 0;
+    z-index: 3;
+}
+
+.project-container .cards .card:hover .card-head::before {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 4px;
+    opacity: 1;
+}
+
+.project-container .cards .card:hover .card-head .card-overlay::before {
+    top: 20px;
+    left: 20px;
+    opacity: 1;
+}
+
+.project-container .cards .card:hover .card-head .card-overlay::after {
+    opacity: 1;
+    bottom: 20px;
+    right: 20px;
+}
+
+.project-container .cards .card .card-body {
+    gap: 10px 0;
+    padding: 10px 12px;
+}
+
+.project-container .cards .card .card-body .card-body-title {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.project-container .cards .card .card-body .card-body-text {
+    --bg-hover: #535353e7;
+    font-size: 1.1rem;
+    color: var(--bg-hover);
+}
