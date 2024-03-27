@@ -22,13 +22,13 @@ for (let i = 0; i < linkList.length; i++) {
 }
 
 // observering the skill-section when it's in viewport to load skills animation
-const skillSection = document.querySelector("#skill");
+const skillSection = document.querySelector(".skills");
 const skillSectionObserver = new IntersectionObserver(
   (entry, observer) => {
     const [ent] = entry;
 
     if (!ent.isIntersecting) return;
-    // progressBar();
+    progressBar();
 
     observer.unobserve(skillSection);
   },

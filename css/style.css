@@ -201,12 +201,17 @@ img {
 }
 
 .hero-section .left .my-name {
-    font-size: 3.5rem;
+    font-size: 4rem;
+    font-weight: 550;
 }
 
 .hero-section .left .about {
     font-size: 1.5rem;
     padding-left: 10px;
+}
+
+.hero-section .left .about #element {
+    color: var(--bg-color);
 }
 
 .left .social-link ul {
@@ -232,7 +237,7 @@ img {
 }
 
 .hero-section .container .box .right .img-box {
-    width: 50%;
+    width: 60%;
 }
 
 .hero-section .container .box .right img {
@@ -591,4 +596,5 @@ textarea:focus {
 
 .footer-section .container .credits a {
     font-weight: 600;
+    color: var(--bg-color);
 }
