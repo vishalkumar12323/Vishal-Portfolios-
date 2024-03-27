@@ -38,49 +38,52 @@
       </nav>
     </header>
 
-    <main id="main">
-      <!-- Home Section -->
-      <section id="home" class="hero-section flex items-center">
-        <div class="container">
-          <div class="flex flex-col justify-center">
-            <div class="left">
-              <h1 class="my-name">vishal kumar</h1>
-              <p class="about">i'm web developer</p>
+    <!-- Home Section -->
+    <section id="home" class="hero-section flex items-center">
+      <div class="container">
+        <div class="box flex justify-center items-center" style="width: 100%">
+          <div class="left">
+            <h1 class="my-name">vishal kumar</h1>
+            <p class="about">i'm web developer</p>
 
-              <div class="social-link">
-                <ul class="flex">
-                  <li>
-                    <a
-                      href="https://github.com/vishalkumar12323"
-                      class="s-link"
-                      target="_blank"
-                      ><ion-icon name="logo-github" size="small"></ion-icon
-                    ></a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.linkedin.com/in/vishal-ninaniya/"
-                      target="_blank"
-                      class="s-link"
-                      ><ion-icon name="logo-linkedin" size="small"></ion-icon
-                    ></a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://twitter.com/vishalkumar2654"
-                      class="s-link"
-                      target="_blank"
-                      ><ion-icon name="logo-twitter" size="small"></ion-icon
-                    ></a>
-                  </li>
-                </ul>
-              </div>
+            <div class="social-link">
+              <ul class="flex">
+                <li>
+                  <a
+                    href="https://github.com/vishalkumar12323"
+                    class="s-link"
+                    target="_blank"
+                    ><ion-icon name="logo-github" size="small"></ion-icon
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/vishal-ninaniya/"
+                    target="_blank"
+                    class="s-link"
+                    ><ion-icon name="logo-linkedin" size="small"></ion-icon
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://twitter.com/vishalkumar2654"
+                    class="s-link"
+                    target="_blank"
+                    ><ion-icon name="logo-twitter" size="small"></ion-icon
+                  ></a>
+                </li>
+              </ul>
             </div>
-            <div class="right"></div>
+          </div>
+          <div class="right flex">
+            <div class="img-box">
+              <img src="/images/img1.jpg" alt="profile-image" />
+            </div>
           </div>
         </div>
-      </section>
-
+      </div>
+    </section>
+    <main id="main">
       <!-- Skill Section -->
       <section class="section skill-section" id="skill">
         <div class="section-title flex flex-col">
@@ -338,6 +341,35 @@
         </div>
       </section>
 
+      <template id="cardTemplate">
+        <div class="card">
+          <div class="card-head select">
+            <img src="#" alt="#" />
+            <div class="card-overlay flex justify-center items-center">
+              <div
+                class="project-setting flex flex-col justify-center items-center"
+              >
+                <p class="project-name"></p>
+                <div
+                  class="project-links flex justify-center items-center"
+                  style="gap: 15px"
+                >
+                  <a href="#" class="link">
+                    <ion-icon name="logo-github" size="large"></ion-icon>
+                  </a>
+                  <a href="#" class="link">
+                    <ion-icon name="link" size="large"></ion-icon>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-body flex flex-col">
+            <div class="card-body-title"></div>
+            <div class="card-body-text"></div>
+          </div>
+        </div>
+      </template>
       <!-- Contact Section -->
       <section class="section contact-section" id="contact">
         <div class="section-title flex flex-col">

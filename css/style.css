@@ -27,7 +27,7 @@
 }
 
 #main {
-    margin: 0 2rem 0 8rem;
+    margin: 0 3rem 0 10rem;
 }
 
 html {
@@ -62,6 +62,10 @@ img {
 .section {
     width: 100%;
     height: 100vh;
+}
+
+.container {
+    margin: 0 3rem 0 10rem;
 }
 
 .flex {
@@ -163,12 +167,11 @@ img {
 .nav ul .link-list {
     position: relative;
     width: 40%;
-    transition: all 0.5s;
+    transition: var(--transition);
     border-radius: 3px;
     background-color: var(--bg-hover);
     box-shadow: 0px 1px 6px -3px var(--black);
 }
-
 
 .nav .link-list .link {
     width: 120px;
@@ -180,17 +183,22 @@ img {
     color: var(--text-color);
 }
 
+.nav .link-list .link .select {
+    color: transparent;
+}
+
 
 /* Hero-Section -------------------- */
 .hero-section {
+    width: 100%;
     height: 100vh;
     align-items: center;
+    background: var(--bg-hover);
 }
 
-.hero-section .container {
-    margin: 1.2rem 1.5rem;
+.hero-section .left {
+    width: 100%;
 }
-
 
 .hero-section .left .my-name {
     font-size: 3.5rem;
@@ -218,9 +226,27 @@ img {
     color: var(--bg-color);
 }
 
+.hero-section .container .box .right {
+    justify-content: end;
+    width: 100%;
+}
+
+.hero-section .container .box .right .img-box {
+    width: 50%;
+}
+
+.hero-section .container .box .right img {
+    margin-right: 1rem;
+    width: 100%;
+}
+
 
 
 /* Skill-Section ------------------- */
+.skill-section {
+    margin-top: 3.5rem;
+}
+
 .skills {
     margin-top: 2.5rem;
 }
@@ -360,6 +386,11 @@ img {
     text-transform: uppercase;
     font-size: 1.5rem;
     font-weight: 600;
+    color: var(--bg-color);
+}
+
+.project-container .cards .card .card-head .card-overlay .project-setting .project-links ion-icon {
+    color: var(--bg-color);
 }
 
 .project-container .cards .card .card-head .card-overlay::before {
@@ -541,7 +572,6 @@ textarea:focus {
 }
 
 .footer-section .container {
-    margin: 0 2rem 0 8rem;
     gap: 10px;
 }
 
@@ -553,4 +583,12 @@ textarea:focus {
 
 .footer-section .container .social-links {
     gap: 10px;
+}
+
+.footer-section .container .social-links a ion-icon:hover {
+    color: var(--bg-color);
+}
+
+.footer-section .container .credits a {
+    font-weight: 600;
 }
