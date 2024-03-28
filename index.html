@@ -3,39 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
+    <!-- <link
       href="
-https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
-"
+        https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
       rel="stylesheet"
-    />
+    /> -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.min.css" />
     <title>Vishal Kumar Portfolios</title>
   </head>
   <body>
-    <header id="header" class="header-section flex justify-center items-center">
+    <header id="header" class="header-section">
       <nav id="navbar" class="nav">
-        <ul class="flex flex-col justify-center">
+        <ul>
           <li class="link-list">
-            <a href="#home" class="link flex">
+            <a href="#home" class="link">
               <ion-icon name="home-outline" class="icons"></ion-icon>
               <span class="select">Home</span>
             </a>
           </li>
           <li class="link-list">
-            <a href="#skill" class="link flex">
+            <a href="#skill" class="link">
               <ion-icon name="code-slash-outline" class="icons"></ion-icon>
               <span class="select">Skills</span>
             </a>
           </li>
           <li class="link-list">
-            <a href="#project" class="link flex">
+            <a href="#project" class="link">
               <ion-icon name="library-outline" class="icons"></ion-icon>
               <span class="select">Projects</span>
             </a>
           </li>
           <li class="link-list">
-            <a href="#contact" class="link flex">
+            <a href="#contact" class="link">
               <ion-icon name="mail-unread-outline" class="icons"></ion-icon>
               <span class="select">Contact</span>
             </a>
@@ -45,15 +45,23 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     </header>
 
     <!-- Home Section -->
-    <section id="home" class="hero-section flex items-center">
+    <section id="home" class="hero-section">
+      <div class="humburger-menu">
+        <div class="bar">
+          <ion-icon name="menu-outline" size="large"></ion-icon>
+        </div>
+        <div class="close">
+          <ion-icon name="close-circle-outline" size="large"></ion-icon>
+        </div>
+      </div>
       <div class="container">
-        <div class="box flex justify-center items-center" style="width: 100%">
+        <div class="box" style="width: 100%">
           <div class="left">
             <h1 class="my-name">vishal kumar</h1>
             <p class="about">i'm a <span id="element"></span></p>
 
             <div class="social-link">
-              <ul class="flex">
+              <ul>
                 <li>
                   <a
                     href="https://github.com/vishalkumar12323"
@@ -81,7 +89,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
               </ul>
             </div>
           </div>
-          <div class="right flex">
+          <div class="right">
             <div class="img-box">
               <img src="/images/img1.jpg" alt="profile-image" />
             </div>
@@ -92,8 +100,8 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     <main id="main">
       <!-- Skill Section -->
       <section class="section skill-section" id="skill">
-        <div class="section-title flex flex-col">
-          <h2 class="flex">skills</h2>
+        <div class="section-title">
+          <h2>skills</h2>
           <p class="paragraph">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
             laboriosam, placeat laborum ut nostrum inventore corporis natus.
@@ -103,10 +111,10 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
         <div class="skills">
           <div class="grid grid-two-cols skill-box">
-            <div class="flex flex-col box">
+            <div class="box">
               <div class="progress">
-                <div class="title flex items-center justify-between">
-                  <span class="tech-name flex justify-center items-center"
+                <div class="title">
+                  <span class="tech-name"
                     >html 5
                     <ion-icon name="logo-html5" class="red size"></ion-icon>
                   </span>
@@ -114,7 +122,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 </div>
                 <div class="progress-bar" data-size="90">
                   <span
-                    class="percentage flex justify-center items-center"
+                    class="percentage"
                     style="
                       box-shadow: var(--red) 5px 0px 15px 0px;
                       background: var(--red);
@@ -123,8 +131,8 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 </div>
               </div>
               <div class="progress">
-                <div class="title flex justify-between items-center">
-                  <span class="tech-name flex justify-center items-center"
+                <div class="title">
+                  <span class="tech-name"
                     >css 3
                     <ion-icon name="logo-css3" class="blue size"></ion-icon>
                   </span>
@@ -132,7 +140,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 </div>
                 <div class="progress-bar" data-size="70">
                   <span
-                    class="percentage flex justify-center items-center"
+                    class="percentage"
                     style="
                       box-shadow: var(--bg-color) 5px 0px 15px 0px;
                       background: var(--bg-color);
@@ -141,8 +149,8 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 </div>
               </div>
               <div class="progress">
-                <div class="title flex justify-between items-center">
-                  <span class="tech-name flex justify-center items-center"
+                <div class="title">
+                  <span class="tech-name"
                     >javascript
                     <ion-icon
                       name="logo-javascript"
@@ -153,7 +161,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 </div>
                 <div class="progress-bar" data-size="60">
                   <span
-                    class="percentage flex justify-center items-center"
+                    class="percentage"
                     style="
                       box-shadow: var(--yellow) 5px 0px 15px 0px;
                       background: var(--yellow);
@@ -162,8 +170,8 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 </div>
               </div>
               <div class="progress">
-                <div class="title flex justify-between items-center">
-                  <span class="tech-name flex justify-center items-center"
+                <div class="title">
+                  <span class="tech-name"
                     >typescript
                     <div class="ts-logo">
                       <span class="typescript select">ts</span>
@@ -173,7 +181,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 </div>
                 <div class="progress-bar" data-size="65">
                   <span
-                    class="percentage flex justify-center items-center"
+                    class="percentage"
                     style="
                       box-shadow: var(--bg-color) 5px 0px 15px 0px;
                       background: var(--bg-color);
@@ -182,10 +190,10 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 </div>
               </div>
             </div>
-            <div class="flex flex-col box">
+            <div class="box">
               <div class="progress">
-                <div class="title flex items-center justify-between">
-                  <span class="tech-name flex justify-center items-center"
+                <div class="title">
+                  <span class="tech-name"
                     >react js
                     <ion-icon name="logo-react" class="blue size"></ion-icon>
                   </span>
@@ -193,7 +201,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 </div>
                 <div class="progress-bar" data-size="55">
                   <span
-                    class="percentage flex justify-center items-center"
+                    class="percentage"
                     style="
                       box-shadow: var(--bg-color) 5px 0px 15px 0px;
                       background: var(--bg-color);
@@ -202,8 +210,8 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 </div>
               </div>
               <div class="progress">
-                <div class="title flex items-center justify-between">
-                  <span class="tech-name flex items-center justify-center"
+                <div class="title">
+                  <span class="tech-name"
                     >node js
                     <ion-icon name="logo-nodejs" class="green size"></ion-icon>
                   </span>
@@ -211,7 +219,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 </div>
                 <div class="progress-bar" data-size="50">
                   <span
-                    class="percentage flex justify-center items-center"
+                    class="percentage"
                     style="
                       box-shadow: var(--green) 5px 0px 15px 0px;
                       background: var(--green);
@@ -220,8 +228,8 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 </div>
               </div>
               <div class="progress">
-                <div class="title flex items-center justify-between">
-                  <span class="tech-name flex justify-center items-center"
+                <div class="title">
+                  <span class="tech-name"
                     >mongo db
                     <ion-icon name="leaf" class="green size"></ion-icon>
                   </span>
@@ -229,7 +237,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 </div>
                 <div class="progress-bar" data-size="65">
                   <span
-                    class="percentage flex justify-center items-center"
+                    class="percentage"
                     style="
                       box-shadow: var(--green) 5px 0px 15px 0px;
                       background: var(--green);
@@ -244,8 +252,8 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
       <!-- Resume Section -->
       <section class="section project-section splide" id="project">
-        <div class="section-title flex flex-col">
-          <h2 class="flex">projects</h2>
+        <div class="section-title">
+          <h2>projects</h2>
           <p class="paragraph">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
             laboriosam, placeat laborum ut nostrum inventore corporis natus.
@@ -264,10 +272,10 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             <img src="" alt="" class="img select" />
           </div>
           <div class="card-overlay">
-            <div class="info flex flex-col">
+            <div class="info">
               <div class="name"></div>
               <div class="description"></div>
-              <div class="projects-links flex">
+              <div class="projects-links">
                 <a href="" target="_blank" class="github">
                   <ion-icon name="logo-github"></ion-icon>
                 </a>
@@ -281,27 +289,27 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
       </template>
       <!-- Contact Section -->
       <section class="section contact-section" id="contact">
-        <div class="section-title flex flex-col">
-          <h2 class="flex">contact</h2>
+        <div class="section-title">
+          <h2>contact</h2>
         </div>
         <div class="grid grid-two-cols">
           <div class="contact-info">
-            <div class="form flex flex-col justify-center">
-              <div class="address info flex items-center">
+            <div class="form">
+              <div class="address">
                 <ion-icon name="location-outline"></ion-icon>
                 <div>
                   <h3>location</h3>
                   <p>A108 Adam Street, New York, NY 535022</p>
                 </div>
               </div>
-              <div class="email info flex items-center">
+              <div class="email">
                 <ion-icon name="mail-outline"></ion-icon>
                 <div>
                   <h3>email</h3>
                   <p>vishalninaniya8949info@gmail.com</p>
                 </div>
               </div>
-              <div class="phone info flex items-center">
+              <div class="phone">
                 <ion-icon name="phone-portrait-outline"></ion-icon>
                 <div>
                   <h3>phone</h3>
@@ -311,7 +319,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             </div>
           </div>
           <div class="contact-form">
-            <div class="user-info flex items-center">
+            <div class="user-info">
               <input
                 type="text"
                 name="name"
@@ -356,9 +364,9 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
     <!-- Footer Section -->
     <footer class="footer-section">
-      <div class="container flex flex-col justify-center items-center">
+      <div class="container">
         <h4>vishal kumar</h4>
-        <div class="social-links flex justify-center">
+        <div class="social-links">
           <a
             href="https://www.linkedin.com/in/vishal-ninaniya/"
             target="_blank"
@@ -395,13 +403,13 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
 
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-
+    <!-- <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> -->
+    <!-- 
     <script src="
       https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
-      "></script>
+      "></script> -->
 
-    <script src="javascript/text-anim.js"></script>
-    <script src="javascript/slider.js"></script>
+    <!-- <script src="javascript/text-anim.js"></script> -->
+    <!-- <script src="javascript/slider.js"></script> -->
   </body>
 </html>

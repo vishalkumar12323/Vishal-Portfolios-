@@ -1,0 +1,14 @@
+@media (width <=500px) {
+    body {
+        background: red;
+    }
+
+    .header-section {
+        --bg-hover: #d1d1d1;
+        width: 55%;
+        justify-content: start;
+        background-color: var(--bg-hover);
+        transform: translateX(-100%);
+        transition: var(--transition);
+    }
+}
