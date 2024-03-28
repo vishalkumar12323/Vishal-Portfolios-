@@ -2,36 +2,41 @@
   {
     "id": 1,
     "name": "weather app",
-    "github-link": "",
-    "preview-link": "",
-    "description": ""
+    "img": "/images/img1.jpg",
+    "githubLink": "/",
+    "previewLink": "/",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit Delectuslaboriosam placeat laborum ut nostrum inventore corporis natus. laboriosam placeat laborum ut nostrum inventore corporis natus"
   },
   {
     "id": 2,
     "name": "daily sleep tracker",
-    "github-link": "",
-    "preview-link": "",
-    "description": ""
+    "img": "/images/img1.jpg",
+    "githubLink": "/",
+    "previewLink": "/",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit Delectuslaboriosam placeat laborum ut nostrum inventore corporis natus. laboriosam placeat laborum ut nostrum inventore corporis natus"
   },
   {
     "id": 3,
-    "name": "",
-    "github-link": "",
-    "preview-link": "",
-    "description": ""
+    "name":"node js app",
+    "img": "/images/img2.jpg",
+    "githubLink": "/",
+    "previewLink": "/",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit Delectuslaboriosam placeat laborum ut nostrum inventore corporis natus. laboriosam placeat laborum ut nostrum inventore corporis natus"
   },
   {
     "id": 4,
     "name": "weather app",
-    "github-link": "",
-    "preview-link": "",
-    "description": ""
+    "img": "/images/img1.jpg",
+    "githubLink": "/",
+    "previewLink": "/",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit Delectuslaboriosam placeat laborum ut nostrum inventore corporis natus. laboriosam placeat laborum ut nostrum inventore corporis natus"
   },
   {
     "id": 5,
     "name": "weather app",
-    "github-link": "",
-    "preview-link": "",
-    "description": ""
+    "img": "/images/img2.jpg",
+    "githubLink": "/",
+    "previewLink": "/",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit Delectuslaboriosam placeat laborum ut nostrum inventore corporis natus. laboriosam placeat laborum ut nostrum inventore corporis natus"
   }
 ]

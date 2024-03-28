@@ -1,3 +1,5 @@
+import projects from "./projects.json";
+import { card } from "./card";
 import { progressBar } from "./progress-bar";
 
 // create animated navbar
@@ -39,3 +41,4 @@ const skillSectionObserver = new IntersectionObserver(
 );
 
 skillSectionObserver.observe(skillSection);
+card(projects);

@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>Vishal Kumar Portfolios</title>
   </head>
@@ -237,7 +243,7 @@
       </section>
 
       <!-- Resume Section -->
-      <section class="section project-section" id="project">
+      <section class="section project-section splide" id="project">
         <div class="section-title flex flex-col">
           <h2 class="flex">projects</h2>
           <p class="paragraph">
@@ -247,126 +253,29 @@
           </p>
         </div>
 
-        <div class="project-container">
-          <div class="cards flex">
-            <div class="card">
-              <div class="card-head select">
-                <img src="/images/img1.jpg" alt="project" />
-                <div class="card-overlay flex justify-center items-center">
-                  <div
-                    class="project-setting flex flex-col justify-center items-center"
-                  >
-                    <p class="project-name">project 1</p>
-                    <div
-                      class="project-links flex justify-center items-center"
-                      style="gap: 15px"
-                    >
-                      <a href="#" class="link">
-                        <ion-icon name="logo-github" size="large"></ion-icon>
-                      </a>
-                      <a href="#" class="link">
-                        <ion-icon name="link" size="large"></ion-icon>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card-body flex flex-col">
-                <div class="card-body-title">html project</div>
-                <div class="card-body-text">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Aliquam.
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-head select">
-                <img src="/images/img1.jpg" alt="project" />
-                <div class="card-overlay flex justify-center items-center">
-                  <div
-                    class="project-setting flex flex-col justify-center items-center"
-                  >
-                    <p class="project-name">project 2</p>
-                    <div
-                      class="project-links flex justify-center items-center"
-                      style="gap: 15px"
-                    >
-                      <a href="#" class="link">
-                        <ion-icon name="logo-github" size="large"></ion-icon>
-                      </a>
-                      <a href="#" class="link">
-                        <ion-icon name="link" size="large"></ion-icon>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card-body flex flex-col">
-                <div class="card-body-title">html project</div>
-                <div class="card-body-text">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Aliquam.
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-head select">
-                <img src="/images/img1.jpg" alt="project" />
-                <div class="card-overlay flex justify-center items-center">
-                  <div class="project-setting flex justify-center items-center">
-                    <p class="project-name">project 1</p>
-                    <div
-                      class="project-links flex justify-center items-center"
-                      style="gap: 15px"
-                    >
-                      <a href="#" class="link">
-                        <ion-icon name="logo-github" size="large"></ion-icon>
-                      </a>
-                      <a href="#" class="link">
-                        <ion-icon name="link" size="large"></ion-icon>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card-body flex flex-col">
-                <div class="card-body-title">html project</div>
-                <div class="card-body-text">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Aliquam.
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="splide__track project-container">
+          <div class="card-container splide__list" id="cardContainer"></div>
         </div>
       </section>
 
       <template id="cardTemplate">
-        <div class="card">
-          <div class="card-head select">
-            <img src="#" alt="#" />
-            <div class="card-overlay flex justify-center items-center">
-              <div
-                class="project-setting flex flex-col justify-center items-center"
-              >
-                <p class="project-name"></p>
-                <div
-                  class="project-links flex justify-center items-center"
-                  style="gap: 15px"
-                >
-                  <a href="#" class="link">
-                    <ion-icon name="logo-github" size="large"></ion-icon>
-                  </a>
-                  <a href="#" class="link">
-                    <ion-icon name="link" size="large"></ion-icon>
-                  </a>
-                </div>
+        <div class="card splide__slide">
+          <div class="card-img">
+            <img src="" alt="" class="img select" />
+          </div>
+          <div class="card-overlay">
+            <div class="info flex flex-col">
+              <div class="name"></div>
+              <div class="description"></div>
+              <div class="projects-links flex">
+                <a href="" target="_blank" class="github">
+                  <ion-icon name="logo-github"></ion-icon>
+                </a>
+                <a href="" target="_blank" class="preview-link">
+                  <ion-icon name="link"></ion-icon>
+                </a>
               </div>
             </div>
-          </div>
-          <div class="card-body flex flex-col">
-            <div class="card-body-title"></div>
-            <div class="card-body-text"></div>
           </div>
         </div>
       </template>
@@ -444,6 +353,7 @@
         </div>
       </section>
     </main>
+
     <!-- Footer Section -->
     <footer class="footer-section">
       <div class="container flex flex-col justify-center items-center">
@@ -484,20 +394,14 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
-    <script>
-      var typed = new Typed("#element", {
-        strings: [
-          "web developer",
-          "freelancer",
-          "node js developer",
-          "react js developer",
-          "javascript developer",
-        ],
-        typeSpeed: 80,
-        loop: true,
-      });
-    </script>
+    <script src="
+      https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+      "></script>
+
+    <script src="javascript/text-anim.js"></script>
+    <script src="javascript/slider.js"></script>
   </body>
 </html>
