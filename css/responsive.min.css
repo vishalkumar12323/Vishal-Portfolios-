@@ -1,6 +1,15 @@
 @media (width <=500px) {
     body {
-        background: red;
+        background: #94ddff;
+    }
+
+    #main {
+        margin: 0 0;
+    }
+
+    .container {
+        margin: 0 0;
+        padding: 0 1rem;
     }
 
     .header-section {
@@ -10,5 +19,120 @@
         background-color: var(--bg-hover);
         transform: translateX(-100%);
         transition: var(--transition);
+    }
+
+    .hero-section {
+        height: 80vh;
+    }
+
+    .hero-section .humburger-menu {
+        /* display: block; */
+    }
+
+    .hero-section .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-section .container .box {
+        height: 100%;
+        flex-direction: column-reverse;
+        gap: var(--space-x-y);
+        padding: 3rem 0 0 0;
+    }
+
+    .hero-section .container .box .left {
+        justify-content: start;
+        align-items: center;
+    }
+
+    .hero-section .left .my-name {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .hero-section .left .about {
+        text-align: center;
+    }
+
+    .hero-section .left .social-link ul {
+        justify-content: center;
+    }
+
+    .hero-section .container .box .right {
+        justify-content: center;
+    }
+
+
+    /* skill-section -------------------- */
+    .skill-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 85%;
+    }
+
+    .skill-section .skills {
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .skill-section .skills .skill-box {
+        padding: 0 1rem;
+        grid-template-columns: 1fr;
+    }
+
+
+    /* project-section -------------------- */
+    .project-section {
+        height: 85%;
+        margin-top: 2rem;
+    }
+
+    .project-section .project-container {
+        padding: 1rem;
+    }
+
+    .project-section .project-container .card-container {
+        padding: 0;
+        height: 40rem;
+    }
+
+    .card-overlay .name {
+        font-size: 2rem;
+        font-weight: 400;
+        color: var(--bg-color);
+        text-transform: uppercase;
+
+    }
+
+    .card-overlay .description {
+        font-size: 17px;
+        font-weight: 400;
+        max-width: 100%;
+        color: var(--bg-color);
+    }
+
+
+    /* contact-section ----------------- */
+    .contact-section {
+        margin-top: 3rem;
+        padding-bottom: 1rem;
+    }
+
+    .contact-section .grid-two-cols {
+        margin-top: 2rem;
+        padding: 1rem;
+        grid-template-columns: 1fr;
+        gap: var(--space-x-y);
+    }
+
+    /* footer-section ------------------- */
+    .footer-section {
+        height: 30vh;
     }
 }

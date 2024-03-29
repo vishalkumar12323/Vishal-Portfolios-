@@ -8,7 +8,7 @@
         https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
       rel="stylesheet"
     /> -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
     <link rel="stylesheet" href="css/responsive.min.css" />
     <title>Vishal Kumar Portfolios</title>
   </head>
@@ -46,16 +46,16 @@
 
     <!-- Home Section -->
     <section id="home" class="hero-section">
-      <div class="humburger-menu">
+      <!-- <div class="humburger-menu">
         <div class="bar">
           <ion-icon name="menu-outline" size="large"></ion-icon>
         </div>
         <div class="close">
           <ion-icon name="close-circle-outline" size="large"></ion-icon>
         </div>
-      </div>
+      </div> -->
       <div class="container">
-        <div class="box" style="width: 100%">
+        <div class="box">
           <div class="left">
             <h1 class="my-name">vishal kumar</h1>
             <p class="about">i'm a <span id="element"></span></p>
@@ -67,7 +67,7 @@
                     href="https://github.com/vishalkumar12323"
                     class="s-link"
                     target="_blank"
-                    ><ion-icon name="logo-github" size="small"></ion-icon
+                    ><ion-icon name="logo-github" size="large"></ion-icon
                   ></a>
                 </li>
                 <li>
@@ -75,7 +75,7 @@
                     href="https://www.linkedin.com/in/vishal-ninaniya/"
                     target="_blank"
                     class="s-link"
-                    ><ion-icon name="logo-linkedin" size="small"></ion-icon
+                    ><ion-icon name="logo-linkedin" size="large"></ion-icon
                   ></a>
                 </li>
                 <li>
@@ -83,13 +83,13 @@
                     href="https://twitter.com/vishalkumar2654"
                     class="s-link"
                     target="_blank"
-                    ><ion-icon name="logo-twitter" size="small"></ion-icon
+                    ><ion-icon name="logo-twitter" size="large"></ion-icon
                   ></a>
                 </li>
               </ul>
             </div>
           </div>
-          <div class="right">
+          <div class="right select">
             <div class="img-box">
               <img src="/images/img1.jpg" alt="profile-image" />
             </div>
@@ -262,7 +262,32 @@
         </div>
 
         <div class="splide__track project-container">
-          <div class="card-container splide__list" id="cardContainer"></div>
+          <div class="card-container splide__list" id="cardContainer">
+            <div class="card splide__slide">
+              <div class="card-img">
+                <img src="/images/img1.jpg" alt="" class="img select" />
+              </div>
+              <div class="card-overlay">
+                <div class="info">
+                  <div class="name">html 5</div>
+                  <div class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Magni architecto sunt nesciunt assumenda reprehenderit.
+                    Voluptate cum pariatur explicabo sequi culpa. Nostrum quos
+                    doloremque reprehenderit error velit quia minima odio sunt!
+                  </div>
+                  <div class="projects-links">
+                    <a href="" target="_blank" class="github">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                    <a href="" target="_blank" class="preview-link">
+                      <ion-icon name="link"></ion-icon>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -299,7 +324,7 @@
                 <ion-icon name="location-outline"></ion-icon>
                 <div>
                   <h3>location</h3>
-                  <p>A108 Adam Street, New York, NY 535022</p>
+                  <p>Jhoonjhoonu, Raj. India</p>
                 </div>
               </div>
               <div class="email">
@@ -404,8 +429,8 @@
     ></script>
 
     <!-- <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> -->
-    <!-- 
-    <script src="
+
+    <!-- <script src="
       https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
       "></script> -->
 

@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", function () {
     type: "loop",
     autoplay: true,
     arrows: false,
-    theme: "Skyblue",
   });
   //   splide.arrows = false;
   splide.mount();

@@ -16,14 +16,14 @@ for (let i = 0; i < linkList.length; i++) {
   linkList[i].addEventListener("mouseover", () => {
     linkList[i].classList.add("active");
     linkList[i].style.width = "90%";
-    icons[i].style.color = "#fff";
+    icons[i].style.color = `#fff`;
     links[i].style.color = "#fff";
   });
 
   linkList[i].addEventListener("mouseout", () => {
     linkList[i].classList.remove("active");
     linkList[i].style.width = "40%";
-    icons[i].style.color = "#000";
+    icons[i].style.color = "#0563bb";
     links[i].style.color = "transparent";
   });
 }
@@ -46,7 +46,7 @@ const skillSectionObserver = new IntersectionObserver(
 );
 
 skillSectionObserver.observe(skillSection);
-card(projects);
+// card(projects);
 
 humburgerMenu.addEventListener("click", () => {
   header.classList.toggle("toggler");
