@@ -7,11 +7,6 @@ const linkList = document.querySelectorAll(".link-list");
 const icons = document.querySelectorAll(".icons");
 const links = document.querySelectorAll(".link span");
 
-const humburgerMenu = document.querySelector(".humburger-menu");
-const header = document.querySelector(".header-section");
-const bar = document.querySelector(".hero-section .bar");
-const close = document.querySelector(".hero-section .close");
-
 for (let i = 0; i < linkList.length; i++) {
   linkList[i].addEventListener("mouseover", () => {
     linkList[i].classList.add("active");
@@ -48,7 +43,9 @@ const skillSectionObserver = new IntersectionObserver(
 skillSectionObserver.observe(skillSection);
 // card(projects);
 
+const header = document.querySelector(".header-section");
+const humburgerMenu = document.querySelector(".humburger-menu");
+
 humburgerMenu.addEventListener("click", () => {
-  header.classList.toggle("toggler");
-  bar.classList.toggle("barToggler");
+  header.classList.toggle("nav-active");
 });
