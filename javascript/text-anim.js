@@ -6,6 +6,6 @@ var typed = new Typed("#element", {
     "react js developer",
     "javascript developer",
   ],
-  typeSpeed: 80,
+  typeSpeed: 100,
   loop: true,
 });

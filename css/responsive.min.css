@@ -1,5 +1,6 @@
-@media (width <=500px) {
+@media (width <=768px) {
 
+    /* reuseable classes -------------- */
     #main {
         margin: 0 0;
     }
@@ -18,16 +19,32 @@
         font-size: 16px;
     }
 
+    /* header-section -------------------- */
     .header-section {
-        --bg-hover: #d1d1d1;
         width: 55%;
         justify-content: start;
-        background-color: var(--bg-hover);
+        background-color: var(--background);
         transition: var(--transition);
         transform: translateX(-100%);
     }
 
+    .header-section .nav {
+        width: 100%;
+    }
 
+    .header-section .nav ul .link-list {
+        width: 100%;
+    }
+
+    .header-section .nav ul .link-list .link span {
+        color: var(--text-color);
+    }
+
+    .header-section .nav ul .link-list:hover .link span {
+        color: var(--background);
+    }
+
+    /* hero-section ---------------------- */
     .hero-section .humburger-menu {
         display: block;
     }
@@ -64,6 +81,7 @@
 
     .hero-section .left .about {
         text-align: start;
+        width: 100%;
     }
 
     .hero-section .left .social-link ul {
@@ -101,12 +119,8 @@
 
     /* project-section -------------------- */
     .project-section {
-        /* height: 85%; */
-        margin-top: 2rem;
-    }
-
-    .project-section .project-container {
         padding: 1rem;
+        margin-top: 2rem;
     }
 
     .project-section .project-container .card-container {
@@ -117,7 +131,6 @@
     .card-overlay .name {
         font-size: 2rem;
         font-weight: 400;
-        color: var(--bg-color);
         text-transform: uppercase;
 
     }
@@ -126,7 +139,6 @@
         font-size: 17px;
         font-weight: 400;
         max-width: 100%;
-        color: var(--bg-color);
     }
 
 
@@ -146,5 +158,25 @@
     /* footer-section ------------------- */
     .footer-section {
         height: 30vh;
+    }
+}
+
+
+@media (768px <=width <=1000px) {
+    #main {
+        margin: 0 1.5rem 0 6rem;
+    }
+
+    .container {
+        margin: 0 1.5rem 0 6rem;
+    }
+
+
+    .hero-section .left .my-name {
+        font-size: 3rem;
+    }
+
+    .hero-section .left .about {
+        width: 100%;
     }
 }

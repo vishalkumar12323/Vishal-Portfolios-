@@ -10,27 +10,27 @@
 
 :root {
     --text-color: #fff;
-    --bg-color: #0563bb;
-    --secondary-bg-color: #0077e7;
-    --bg-hover: #f2f3f5;
-    --black: #080808e3;
+    --bg-color: #17c0eb;
+    --secondary-bg-color: #18dcff;
+    --background: #222222;
     --red: #ff0000;
     --green: #18af04;
     --yellow: #ffd000;
     --transition: 0.5s;
     --space-x-y: 16px;
     --txt-shadow: 2px 1px 2px var(--bg-color);
+    --gredient-color: linear-gradient(90deg, #18dcff, #17c0eb);
 }
 
 ::selection {
-    color: var(--black);
+    color: var(--secondary-bg-color);
     background-color: transparent;
-    text-shadow: var(--txt-shadow);
 }
 
 body {
     max-width: 1500px !important;
     margin: 0 auto;
+    background: var(--background);
 }
 
 #main {
@@ -45,7 +45,7 @@ html {
 ion-icon {
     margin-left: -2px;
     font-size: 1.7rem;
-    color: var(--black);
+    color: var(--text-color);
 }
 
 a {
@@ -55,6 +55,7 @@ a {
 li {
     list-style: none;
 }
+
 
 img {
     width: 100%;
@@ -70,10 +71,12 @@ img {
 .section {
     width: 100%;
     height: 100vh;
+    color: var(--text-color);
 }
 
 .container {
     margin: 0 3rem 0 10rem;
+    color: var(--text-color);
 }
 
 .grid {
@@ -97,11 +100,11 @@ img {
 }
 
 .section-title .paragraph {
-    --bg-hover: #535353e7;
+    --text-color: #fffffff8;
     text-align: center;
     font-size: 1.2rem;
     margin-top: 9px;
-    color: var(--bg-hover);
+    color: var(--text-color);
 }
 
 .section-title h2 {
@@ -111,6 +114,7 @@ img {
     align-items: center;
     position: relative;
     text-transform: uppercase;
+    color: var(--text-color);
     text-shadow: var(--txt-shadow);
 }
 
@@ -121,7 +125,7 @@ img {
     width: 100px;
     height: 2px;
     margin: 0 auto;
-    background-color: var(--bg-hover);
+    background-color: var(--text-color);
 }
 
 .section-title h2::after {
@@ -139,17 +143,17 @@ img {
     font-size: 20px;
     outline: none;
     text-transform: capitalize;
-    border: lightblue solid 0.1px;
+    border: var(--bg-color) solid 0.1px;
     border-radius: 4px;
     color: var(--bg-color);
-    background-color: var(--text-color);
+    background-color: var(--background);
     transition: var(--transition);
 }
 
 .btn:hover {
     cursor: pointer;
-    color: var(--text-color);
-    background-color: var(--bg-color);
+    color: var(--background);
+    background: var(--gredient-color);
 }
 
 /* Header-Section ---------------------  */
@@ -168,6 +172,7 @@ img {
     justify-content: center;
     align-items: center;
     height: 100vh;
+
 }
 
 .nav ul {
@@ -183,12 +188,17 @@ img {
     width: 40%;
     transition: var(--transition);
     border-radius: 3px;
-    background-color: var(--bg-hover);
-    box-shadow: 0px 1px 6px -3px var(--black);
+    background-color: var(--background);
+    box-shadow: 0px 1px 6px -3px var(--secondary-bg-color);
     border: 1.5px solid var(--bg-color);
 }
 
-.nav .link-list .link {
+.nav ul .link-list:hover {
+    width: 100%;
+    background: var(--gredient-color);
+}
+
+.nav ul .link-list .link {
     display: flex;
     width: 120px;
     height: 53px;
@@ -196,29 +206,35 @@ img {
     align-items: center;
     padding: 13px;
     overflow: hidden;
-    color: var(--text-color);
 }
 
-.nav .link-list .link .select {
+.nav ul .link-list .link span {
     color: transparent;
+}
+
+.nav ul .link-list:hover .link span,
+.nav ul .link-list:hover .link ion-icon {
+    color: var(--background);
 }
 
 
 /* Hero-Section -------------------- */
 .hero-section {
+    --background: #2b2b2b;
     position: relative;
     width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
-    background: var(--bg-hover);
+    background: var(--background);
 }
 
 .hero-section .humburger-menu {
-    position: absolute;
+    position: fixed;
     top: 0.7rem;
     right: 1rem;
     display: none;
+    z-index: 9999;
 }
 
 
@@ -356,7 +372,7 @@ img {
     width: 100%;
     height: 7px;
     margin: 5px 0px;
-    background-color: var(--bg-hover);
+    background-color: var(--text-color);
 }
 
 .red {
@@ -440,14 +456,14 @@ img {
 }
 
 .project-section .card-container .card .card-img::before {
-    --bg-color: #99bdeb36;
+    --text-color: #ffffffd0;
     content: "";
     position: absolute;
     top: 40px;
     left: 40px;
     bottom: 40px;
     right: 40px;
-    background-color: var(--bg-color);
+    background-color: var(--text-color);
     transition: var(--transition);
     opacity: 0;
 }
@@ -527,7 +543,7 @@ img {
 .card-overlay .name {
     font-size: 1.5rem;
     font-weight: 400;
-    color: var(--bg-color);
+    color: var(--background);
     text-transform: uppercase;
 
 }
@@ -536,7 +552,7 @@ img {
     font-size: 16px;
     font-weight: 400;
     max-width: 85%;
-    color: var(--bg-color);
+    color: var(--background);
 }
 
 
@@ -547,6 +563,11 @@ img {
 }
 
 .card-overlay .projects-links ion-icon {
+    color: var(--background);
+
+}
+
+.card-overlay .projects-links ion-icon:hover {
     color: var(--bg-color);
 
 }
@@ -595,26 +616,26 @@ img {
 }
 
 .contact-section .contact-info .form ion-icon {
-    color: #0563bb;
-    --bg-color: #eef7ff;
+    color: var(--bg-color);
+    border: var(--secondary-bg-color) solid 0.5px;
     padding: var(--space-x-y);
     border-radius: 50%;
-    background-color: var(--bg-color);
+    background-color: var(--background);
     transition: var(--transition);
 }
 
 .contact-section .contact-info .form .address:hover ion-icon {
-    color: var(--text-color);
+    color: var(--background);
     background-color: var(--secondary-bg-color);
 }
 
 .contact-section .contact-info .form .email:hover ion-icon {
-    color: var(--text-color);
+    color: var(--background);
     background-color: var(--secondary-bg-color);
 }
 
 .contact-section .contact-info .form .phone:hover ion-icon {
-    color: var(--text-color);
+    color: var(--background);
     background-color: var(--secondary-bg-color);
 }
 
@@ -629,13 +650,13 @@ textarea {
     padding: 10px 5px;
     outline: none;
     border-radius: 4px;
-    border: lightblue solid 0.1px;
+    border: var(--secondary-bg-color) solid 0.3px;
     transition: var(--transition);
 }
 
 .contact-section .contact-form input:focus,
 textarea:focus {
-    border: var(--bg-color) solid 1px;
+    border: var(--bg-color) solid 1.5px;
 }
 
 .contact-section .contact-form .user-info {
@@ -653,8 +674,9 @@ textarea:focus {
 
 /* Footer Section ---------------- */
 .footer-section {
+    --background: #2b2b2b;
     height: 35vh;
-    background-color: var(--bg-hover);
+    background: var(--background);
 }
 
 .footer-section .container {
@@ -685,4 +707,23 @@ textarea:focus {
 .footer-section .container .credits a {
     font-weight: 600;
     color: var(--bg-color);
+}
+
+
+
+/* scroll-bar --------------- */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--gredient-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-bg-color);
 }
