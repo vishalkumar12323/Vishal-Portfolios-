@@ -2,10 +2,10 @@
   {
     "id": 1,
     "name": "weather app",
-    "img": "/images/img1.jpg",
-    "githubLink": "/",
-    "previewLink": "/",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit Delectuslaboriosam placeat laborum ut nostrum inventore corporis natus. laboriosam placeat laborum ut nostrum inventore corporis natus"
+    "img": "/images/weather_app_screenshot.webp",
+    "githubLink": "https://github.com/vishalkumar12323/weather_react_app/",
+    "previewLink": "https://vishalkumar12323.github.io/weather_react_app/",
+    "description": "a fully responsive weather app build with react js, tailwindcss, axios api.Fetch weather any city, place and user live location weather"
   },
   {
     "id": 2,

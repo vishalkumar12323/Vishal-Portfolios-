@@ -11,8 +11,8 @@ export function card(projects) {
     element.querySelector(".img").alt = `${name} project image`;
     element.querySelector(".name").textContent = name;
     element.querySelector(".description").textContent = description;
-    // element.querySelector(".github").href = githubLink;
-    // element.querySelector(".previewLink").href = previewLink;
+    element.querySelector(".github").href = githubLink;
+    element.querySelector(".preview-link").href = previewLink;
 
     cardContainer.append(element);
   });

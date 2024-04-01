@@ -9,8 +9,7 @@ const skillSectionObserver = new IntersectionObserver(
     const [ent] = entry;
 
     if (!ent.isIntersecting) return;
-    progressBar();
-    card(projects);
+    // progressBar();
 
     observer.unobserve(skillSection);
   },
@@ -21,6 +20,8 @@ const skillSectionObserver = new IntersectionObserver(
 );
 
 skillSectionObserver.observe(skillSection);
+
+card(projects);
 
 const header = document.querySelector(".header-section");
 const humburgerMenu = document.querySelector(".humburger-menu");
