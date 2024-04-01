@@ -4,6 +4,5 @@ document.addEventListener("DOMContentLoaded", function () {
     autoplay: true,
     arrows: false,
   });
-  //   splide.arrows = false;
   splide.mount();
 });
