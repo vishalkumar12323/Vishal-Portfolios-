@@ -395,6 +395,19 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
     ></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="javascript/text-anim.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "web developer",
+          "javascript dev",
+          "react js dev",
+          "node js dev",
+          "freelancer",
+        ],
+      });
+
+      typed.typeSpeed = 100;
+      typed.loop = true;
+    </script>
   </body>
 </html>
