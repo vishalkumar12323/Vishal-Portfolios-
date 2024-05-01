@@ -9,7 +9,7 @@ const skillSectionObserver = new IntersectionObserver(
     const [ent] = entry;
 
     if (!ent.isIntersecting) return;
-    // progressBar();
+    progressBar();
 
     observer.unobserve(skillSection);
   },

@@ -3,11 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="
-        https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="css/desktop.min.css" />
     <link rel="stylesheet" href="css/mobile.min.css" />
     <title>Vishal Kumar Portfolios</title>
@@ -88,13 +83,18 @@
               </div>
 
               <div class="buttons">
-                <button class="btn">Resume</button>
+                <a
+                  class="btn"
+                  href="https://www.canva.com/design/DAGAJMIu_L4/iJrdOfMBtqcbOoi417p7eQ/view?utm_content=DAGAJMIu_L4&utm_campaign=designshare&utm_medium=link&utm_source=editor"
+                  target="_blank"
+                  >Resume</a
+                >
               </div>
             </div>
           </div>
           <div class="right select">
             <div class="img-box">
-              <img src="/images/img1.jpg" alt="profile-image" />
+              <img src="/images/profile-photo.jpeg" alt="vishal kumar" />
             </div>
           </div>
         </div>
@@ -105,11 +105,6 @@
       <section class="section skill-section" id="skill">
         <div class="section-title">
           <h2>skills</h2>
-          <p class="paragraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
-            laboriosam, placeat laborum ut nostrum inventore corporis natus.
-            laboriosam, placeat laborum ut nostrum inventore corporis natus.
-          </p>
         </div>
 
         <div class="skills">
@@ -254,23 +249,21 @@
       </section>
 
       <!-- Resume Section -->
-      <section class="section project-section splide" id="project">
+      <section class="section project-section" id="project">
         <div class="section-title">
           <h2>projects</h2>
-          <p class="paragraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
-            laboriosam, placeat laborum ut nostrum inventore corporis natus.
-            laboriosam, placeat laborum ut nostrum inventore corporis natus.
-          </p>
         </div>
 
-        <div class="splide__track project-container">
-          <div class="card-container splide__list" id="cardContainer"></div>
+        <div class="project-container">
+          <div
+            class="card-container grid grid-two-cols"
+            id="cardContainer"
+          ></div>
         </div>
       </section>
 
       <template id="cardTemplate">
-        <div class="card splide__slide">
+        <div class="card">
           <div class="card-img">
             <img src="" alt="" class="img select" />
           </div>
@@ -374,19 +367,19 @@
             href="https://www.linkedin.com/in/vishal-ninaniya/"
             target="_blank"
             class="s-link"
-            ><ion-icon name="logo-linkedin" size="large"></ion-icon
+            ><ion-icon name="logo-linkedin" size="small"></ion-icon
           ></a>
           <a
             href="https://github.com/vishalkumar12323"
             class="s-link"
             target="_blank"
-            ><ion-icon name="logo-github" size="large"></ion-icon
+            ><ion-icon name="logo-github" size="small"></ion-icon
           ></a>
           <a
             href="https://twitter.com/vishalkumar2654"
             class="s-link"
             target="_blank"
-            ><ion-icon name="logo-twitter" size="large"></ion-icon
+            ><ion-icon name="logo-twitter" size="small"></ion-icon
           ></a>
         </div>
         <div class="copyright">
@@ -401,18 +394,7 @@
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
     ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
-
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-
-    <script src="
-      https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
-      "></script>
-
     <script src="javascript/text-anim.js"></script>
-    <script src="javascript/slider.js"></script>
   </body>
 </html>

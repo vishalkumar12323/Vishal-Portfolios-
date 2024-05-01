@@ -5,38 +5,14 @@
     "img": "/images/weather_app_screenshot.webp",
     "githubLink": "https://github.com/vishalkumar12323/weather_react_app/",
     "previewLink": "https://vishalkumar12323.github.io/weather_react_app/",
-    "description": "a fully responsive weather app build with react js, tailwindcss, axios api.Fetch weather any city, place and user live location weather"
+    "description": "a fully responsive weather app build with react js, tailwindcss, axios api. Fetch weather any city, place and user live location weather"
   },
   {
     "id": 2,
-    "name": "daily sleep tracker",
-    "img": "/images/img1.jpg",
-    "githubLink": "/",
-    "previewLink": "/",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit Delectuslaboriosam placeat laborum ut nostrum inventore corporis natus. laboriosam placeat laborum ut nostrum inventore corporis natus"
-  },
-  {
-    "id": 3,
-    "name":"node js app",
-    "img": "/images/img2.jpg",
-    "githubLink": "/",
-    "previewLink": "/",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit Delectuslaboriosam placeat laborum ut nostrum inventore corporis natus. laboriosam placeat laborum ut nostrum inventore corporis natus"
-  },
-  {
-    "id": 4,
-    "name": "weather app",
-    "img": "/images/img1.jpg",
-    "githubLink": "/",
-    "previewLink": "/",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit Delectuslaboriosam placeat laborum ut nostrum inventore corporis natus. laboriosam placeat laborum ut nostrum inventore corporis natus"
-  },
-  {
-    "id": 5,
-    "name": "weather app",
-    "img": "/images/img2.jpg",
-    "githubLink": "/",
-    "previewLink": "/",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit Delectuslaboriosam placeat laborum ut nostrum inventore corporis natus. laboriosam placeat laborum ut nostrum inventore corporis natus"
+    "name": "daily-sleeps",
+    "img": "/images/daily-sleeps-scr.png",
+    "githubLink": "https://github.com/vishalkumar12323/daily-sleeps",
+    "previewLink": "https://daily-sleeps.vercel.app",
+    "description": "Daily Sleeps is a Next.js full stack web app where users can log their sleep entries. it's offers a seamless experience for improving sleep habits."
   }
 ]

@@ -1,10 +1,10 @@
 var typed = new Typed("#element", {
   strings: [
     "web developer",
+    "javascript dev",
+    "react js dev",
+    "node js dev",
     "freelancer",
-    "node js developer",
-    "react js developer",
-    "javascript developer",
   ],
 });
 
