@@ -7,11 +7,12 @@
   font-family: "Open Sans", sans-serif;
 }
 
+/* #f5f6fa */
 :root {
   --text-color: #fff;
   --bg-color: #17c0eb;
   --secondary-bg-color: #18dcff;
-  --background: #222222;
+  --background: #0e0e0e;
   --red: #ff0000;
   --green: #18af04;
   --yellow: #ffd000;
@@ -29,7 +30,6 @@
 body {
   max-width: 1500px !important;
   margin: 0 auto;
-  background: var(--background);
 }
 
 #main {
@@ -61,6 +61,17 @@ img {
 }
 
 /* Reuseable Classes --------------------- */
+
+.dark {
+  background-color: var(--background);
+  color: #ffffff;
+}
+
+.light {
+  background-color: #fff;
+  color: var(--background);
+}
+
 .active {
   color: var(--text-color);
   background: var(--bg-color) !important;
@@ -69,12 +80,12 @@ img {
 .section {
   width: 100%;
   height: 100vh;
-  color: var(--text-color);
+  /* color: var(--text-color); */
 }
 
 .container {
   margin: 0 3rem 0 10rem;
-  color: var(--text-color);
+  /* color: var(--text-color); */
 }
 
 .grid {
@@ -145,13 +156,28 @@ img {
   background: var(--gredient-color);
 }
 
+.top-button {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 50%;
+  background: var(--gredient-color);
+  cursor: pointer;
+  transition: opacity 0.5s linear;
+}
+
 /* Header-Section ---------------------  */
 #header {
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
-  padding: 0px 10px;
   z-index: 9997;
   overflow-y: auto;
 }
@@ -207,13 +233,31 @@ img {
 
 /* Hero-Section -------------------- */
 .hero-section {
-  --background: #2b2b2b;
+  /* --background: #ffffff; */
+  --background: #020202;
   position: relative;
   width: 100%;
   height: 100vh;
   display: flex;
   align-items: center;
   background: var(--background);
+}
+
+.hero-section .theme-icon {
+  position: absolute;
+  right: 5%;
+  top: 4%;
+}
+
+.hero-section .theme-icon .theme-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 .hero-section .humburger-menu {
@@ -307,6 +351,7 @@ img {
 /* Skill-Section ------------------- */
 .skill-section {
   margin-top: 3.5rem;
+  height: 90vh;
 }
 
 .skills {
@@ -418,7 +463,7 @@ img {
   overflow-y: auto;
   gap: 10px;
   width: 100%;
-  height: 26rem;
+  height: 30rem;
 }
 
 .project-section .card-container .card {
@@ -656,7 +701,8 @@ textarea:focus {
 
 /* Footer Section ---------------- */
 .footer-section {
-  --background: #2b2b2b;
+  /* --background: #ffffff; */
+  --background: #020202;
   height: 35vh;
   background: var(--background);
 }

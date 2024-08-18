@@ -1,4 +1,5 @@
 @media (width <=768px) {
+
   /* reuseable classes -------------- */
   #main {
     margin: 0 0;
@@ -20,11 +21,21 @@
 
   /* header-section -------------------- */
   .header-section {
-    width: 55%;
+    width: 100%;
+    height: 100%;
     justify-content: start;
-    background-color: var(--background);
+    background-color: transparent;
     transition: var(--transition);
     transform: translateX(-100%);
+  }
+
+  .header-section div {
+    width: 55%;
+    height: 100%;
+    background-color: var(--background);
+    display: flex;
+    justify-content: start;
+    align-items: center;
   }
 
   .header-section .nav {
@@ -46,6 +57,11 @@
   /* hero-section ---------------------- */
   .hero-section .humburger-menu {
     display: block;
+  }
+
+  .hero-section .theme-icon {
+    top: 14px;
+    right: 80px;
   }
 
   .header-section.nav-active {
@@ -88,7 +104,7 @@
   }
 
   .hero-section .left .items .buttons {
-    margin-top: 10px;
+    margin-top: 1.2rem;
   }
 
   .hero-section .container .box .right {
@@ -129,27 +145,29 @@
   }
 
   .project-section .card-container .card:hover .card-overlay::before {
-    top: 25px;
-    left: 25px;
+    top: 15px;
+    left: 15px;
   }
+
   .project-section .card-container .card:hover .card-overlay::after {
-    bottom: 25px;
-    right: 25px;
+    bottom: 15px;
+    right: 15px;
   }
 
   .card-overlay .info {
     gap: 5px;
-    left: 3rem;
+    left: 2rem;
     bottom: 1rem;
   }
-  .card-overlay .name {
+
+  .card-overlay .info .name {
     font-size: 1.5rem;
     font-weight: 400;
     text-transform: uppercase;
   }
 
-  .card-overlay .description {
-    font-size: 15px;
+  .card-overlay .info .description {
+    font-size: 12px;
     font-weight: 400;
     max-width: 100%;
   }
@@ -165,6 +183,12 @@
     padding: 1rem;
     grid-template-columns: 1fr;
     gap: var(--space-x-y);
+  }
+
+
+  .top-button {
+    bottom: 10%;
+    right: 5%;
   }
 
   /* footer-section ------------------- */
