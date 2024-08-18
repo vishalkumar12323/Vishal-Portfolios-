@@ -156,13 +156,28 @@ img {
   background: var(--gredient-color);
 }
 
+.top-button {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 50%;
+  background: var(--gredient-color);
+  cursor: pointer;
+  transition: opacity 0.5s linear;
+}
+
 /* Header-Section ---------------------  */
 #header {
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
-  padding: 0px 10px;
   z-index: 9997;
   overflow-y: auto;
 }
@@ -336,6 +351,7 @@ img {
 /* Skill-Section ------------------- */
 .skill-section {
   margin-top: 3.5rem;
+  height: 90vh;
 }
 
 .skills {
