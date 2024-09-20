@@ -1,15 +1,14 @@
 import projects from "./projects.json";
 import { card } from "./card";
 import { progressBar } from "./progress-bar";
-import { themeToggler } from "./web-theme"
-
+import { themeToggler } from "./web-theme";
 
 function init() {
   const mainSection = document.querySelector("#main");
 
-  const buttonElement = document.createElement('button');
+  const buttonElement = document.createElement("button");
   buttonElement.classList.add("top-button");
-  buttonElement.innerHTML = `<ion-icon name="chevron-up-outline"></ion-icon>`
+  buttonElement.innerHTML = `<ion-icon name="chevron-up-outline"></ion-icon>`;
   document.body.appendChild(buttonElement);
 
   themeToggler();
@@ -21,7 +20,7 @@ function init() {
       const [ent] = entry;
 
       if (!ent.isIntersecting) return;
-      progressBar();
+      // progressBar();
 
       observer.unobserve(skillSection);
     },
@@ -35,18 +34,21 @@ function init() {
 
   card(projects);
 
-  const mainSectionObserver = new IntersectionObserver((entries) => {
-    const [ent] = entries;
+  const mainSectionObserver = new IntersectionObserver(
+    (entries) => {
+      const [ent] = entries;
 
-    if (!ent.isIntersecting) {
-      buttonElement.style.opacity = "0";
-    } else {
-      buttonElement.style.opacity = "1";
-      buttonElement.addEventListener("click", () => {
-        window.scrollTo({ behavior: 'smooth', top: 0 });
-      });
-    }
-  }, { root: null, threshold: 0 });
+      if (!ent.isIntersecting) {
+        buttonElement.style.opacity = "0";
+      } else {
+        buttonElement.style.opacity = "1";
+        buttonElement.addEventListener("click", () => {
+          window.scrollTo({ behavior: "smooth", top: 0 });
+        });
+      }
+    },
+    { root: null, threshold: 0 }
+  );
 
   mainSectionObserver.observe(mainSection);
 
@@ -58,13 +60,12 @@ function init() {
     header.classList.toggle("nav-active");
   });
 
-  header.addEventListener('click', (e) => {
+  header.addEventListener("click", (e) => {
     e.stopPropagation();
     header.classList.remove("nav-active");
   });
 
-  navbar.addEventListener('click', (e) => e.stopPropagation());
-};
+  navbar.addEventListener("click", (e) => e.stopPropagation());
+}
 
 init();
-

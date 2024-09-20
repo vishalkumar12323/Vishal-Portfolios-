@@ -146,13 +146,12 @@ img {
   text-transform: capitalize;
   border: var(--bg-color) solid 0.1px;
   border-radius: 4px;
-  color: var(--bg-color);
-  background-color: var(--background);
+  transition: var(--transition);
 }
 
 .btn:hover {
   cursor: pointer;
-  color: var(--background);
+  color: var(--background) !important;
   background: var(--gredient-color);
 }
 
@@ -273,9 +272,41 @@ img {
 }
 
 .hero-section .box {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
 }
+
+.hero-section .box .bottom {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  grid-column: span 2;
+}
+.hero-section .box .bottom .link-box {
+  margin-top: 2.5rem;
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+}
+.hero-section .box .bottom .link-box .link-card {
+  width: 33.3%;
+  height: 100%;
+  border-radius: 4px;
+  padding: 0 1rem;
+  border: 0.5px solid gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero-section .box .bottom .link-box .link-card:hover .social-icon {
+  color: var(--bg-color) !important;
+  transition: var(--transition);
+}
+
 
 .hero-section .left {
   width: 100%;
@@ -293,6 +324,8 @@ img {
 }
 
 .hero-section .left .about {
+  --space-x-y: 5px;
+  margin: var(--space-x-y) 0;
   font-size: 1.5rem;
   padding-left: 10px;
 }
@@ -301,23 +334,6 @@ img {
   color: var(--bg-color);
 }
 
-.hero-section .left .social-link ul {
-  display: flex;
-  --space-x-y: 20px;
-  margin-top: 1rem;
-  gap: var(--space-x-y);
-}
-
-.left .social-link .s-link {
-  --space-x-y: 10px;
-  text-decoration: none;
-  transition: all 0.2s ease;
-  padding-left: var(--space-x-y);
-}
-
-.left .social-link .s-link ion-icon:hover {
-  color: var(--bg-color);
-}
 
 .hero-section .container .box {
   width: 100%;
@@ -325,7 +341,10 @@ img {
 }
 
 .hero-section .left .items .buttons {
-  margin-top: 1rem;
+  margin-top: 2rem;
+}
+.hero-section .left .items .buttons .btn:hover {
+  color: var(--background) !important;
 }
 
 .hero-section .container .box .right {
@@ -729,7 +748,7 @@ textarea:focus {
 }
 
 .footer-section .container .social-links a ion-icon:hover {
-  color: var(--bg-color);
+  color: var(--bg-color) !important;
 }
 
 .footer-section .container .credits a {
