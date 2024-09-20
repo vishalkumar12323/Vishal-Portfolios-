@@ -78,10 +78,17 @@
 
   .hero-section .container .box {
     height: 100%;
-    flex-direction: column-reverse;
     gap: var(--space-x-y);
     padding: 3rem 0 0 0;
+    grid-template-columns: repeat(1, 1fr);
   }
+  .hero-section .box .bottom {
+  }
+
+    .hero-section .box .bottom .link-box {
+      flex-direction: column;
+      height: auto;
+    }
 
   .hero-section .container .box .left {
     justify-content: start;
