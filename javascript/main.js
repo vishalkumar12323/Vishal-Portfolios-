@@ -53,7 +53,7 @@ function init() {
   mainSectionObserver.observe(mainSection);
 
   const header = document.querySelector(".header-section");
-  const humburgerMenu = document.querySelector(".humburger-menu");
+  const humburgerMenu = document.querySelector(".menu-bar");
   const navbar = document.querySelector("#navbar");
 
   humburgerMenu.addEventListener("click", () => {

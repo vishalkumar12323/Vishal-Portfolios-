@@ -1,4 +1,4 @@
-const button = document.querySelector(".theme-button");
+const button = document.querySelector(".t-btn");
 const heroSection = document.querySelector(".hero-section");
 const footerSection = document.querySelector(".footer-section");
 const sectionTitle = document.querySelectorAll(".section-title h2");

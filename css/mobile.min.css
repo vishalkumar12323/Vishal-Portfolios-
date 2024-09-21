@@ -1,5 +1,4 @@
 @media (width <=768px) {
-
   /* reuseable classes -------------- */
   #main {
     margin: 0 0;
@@ -22,7 +21,7 @@
   /* header-section -------------------- */
   .header-section {
     width: 100%;
-    height: 100%;
+    height: fit-content;
     justify-content: start;
     background-color: transparent;
     transition: var(--transition);
@@ -54,70 +53,21 @@
     color: var(--background);
   }
 
-  /* hero-section ---------------------- */
-  .hero-section .humburger-menu {
-    display: block;
-  }
-
-  .hero-section .theme-icon {
-    top: 14px;
-    right: 80px;
-  }
-
   .header-section.nav-active {
     transform: translateX(0%);
   }
 
-  .hero-section .container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  /* hero-section ---------------------- */
+  .section-mid {
+    & .container {
+      grid-template-columns: repeat(1, 1fr);
 
-  .hero-section .container .box {
-    height: 100%;
-    gap: var(--space-x-y);
-    padding: 3rem 0 0 0;
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .hero-section .box .bottom {
-  }
-
-    .hero-section .box .bottom .link-box {
-      flex-direction: column;
-      height: auto;
+      & .left-side {
+        align-items: center;
+        order: 1;
+      }
     }
-
-  .hero-section .container .box .left {
-    justify-content: start;
-    align-items: center;
-    gap: 10px;
   }
-
-  .hero-section .left .my-name {
-    font-size: 3rem;
-    text-align: center;
-  }
-
-  .hero-section .left .about {
-    text-align: start;
-    width: 100%;
-  }
-
-  .hero-section .left .social-link ul {
-    justify-content: start;
-  }
-
-  .hero-section .left .items .buttons {
-    margin-top: 1.2rem;
-  }
-
-  .hero-section .container .box .right {
-    justify-content: center;
-  }
-
   /* skill-section -------------------- */
   .skill-section {
     display: flex;
@@ -192,7 +142,6 @@
     gap: var(--space-x-y);
   }
 
-
   .top-button {
     bottom: 10%;
     right: 5%;
@@ -204,6 +153,49 @@
   }
 }
 
+@media (width <=668px) {
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .section-mid {
+    height: 70%;
+    & .container {
+      & .left-side {
+        & .heading span {
+          text-align: center;
+          font-size: 2.5rem;
+        }
+        & .h-description {
+          & span {
+            font-size: 1.1rem;
+          }
+        }
+      }
+
+      & .right-side {
+        img {
+          width: 250px;
+          height: 250px;
+        }
+      }
+    }
+  }
+  .section-bottom {
+    height: 30%;
+    & .container {
+      grid-template-columns: 1fr;
+      place-content: start;
+
+      & .social-link-card {
+        height: 4rem;
+        padding: 1rem;
+      }
+    }
+  }
+}
 @media (768px <=width <=1000px) {
   #main {
     margin: 0 1.5rem 0 6rem;
