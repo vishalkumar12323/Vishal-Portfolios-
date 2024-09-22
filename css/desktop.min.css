@@ -185,49 +185,60 @@ img {
   justify-content: center;
   align-items: center;
   height: 100vh;
+
+  & .nav {
+    & ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      --space-x-y: 20px;
+      gap: var(--space-x-y);
+
+      & .link-list {
+        position: relative;
+        width: 40%;
+        transition: var(--transition);
+        border-radius: 3px;
+        background-color: var(--background);
+        box-shadow: 0px 1px 6px -3px var(--secondary-bg-color);
+        border: 1.5px solid var(--bg-color);
+
+        & .link {
+          display: flex;
+          width: 120px;
+          height: 53px;
+          gap: 7px;
+          align-items: center;
+          padding: 13px;
+          overflow: hidden;
+
+          & span {
+            color: transparent;
+          }
+
+          & ion-icon {
+            color: var(--text-color) !important;
+          }
+        }
+      }
+
+      & .link-list:hover {
+        width: 100%;
+        background: var(--gredient-color);
+      }
+      & .link-list:hover .link span,
+      .link ion-icon {
+        transition: var(--transition);
+        color: var(--text-color) !important;
+      }
+    }
+  }
 }
 
-.nav ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  --space-x-y: 20px;
-  gap: var(--space-x-y);
-}
-
-.nav ul .link-list {
-  position: relative;
-  width: 40%;
-  transition: var(--transition);
-  border-radius: 3px;
-  background-color: var(--background);
-  box-shadow: 0px 1px 6px -3px var(--secondary-bg-color);
-  border: 1.5px solid var(--bg-color);
-}
-
-.nav ul .link-list:hover {
-  width: 100%;
-  background: var(--gredient-color);
-}
-
-.nav ul .link-list .link {
-  display: flex;
-  width: 120px;
-  height: 53px;
-  gap: 7px;
-  align-items: center;
-  padding: 13px;
-  overflow: hidden;
-}
-
-.nav ul .link-list .link span {
-  color: transparent;
-}
-
-.nav ul .link-list:hover .link span,
+/* .nav ul .link-list .nav ul .link-list .link .nav ul .link-list:hover .link span,
 .nav ul .link-list:hover .link ion-icon {
   color: var(--background);
-}
+} */
 
 /* Hero-Section -------------------- */
 .hero-section {
@@ -249,8 +260,8 @@ img {
   justify-content: center;
   & .theme-buttons {
     position: fixed;
-    top: 1.8%;
-    right: 12%;
+    top: 3%;
+    right: 3%;
 
     & .t-btn {
       border: none;
@@ -259,6 +270,7 @@ img {
     }
   }
   & .menu-bar {
+    display: none;
     position: fixed;
     right: 2%;
     top: 1.5%;

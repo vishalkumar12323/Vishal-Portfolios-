@@ -21,17 +21,17 @@
   /* header-section -------------------- */
   .header-section {
     width: 100%;
-    height: fit-content;
+    height: 100%;
     justify-content: start;
     background-color: transparent;
     transition: var(--transition);
     transform: translateX(-100%);
   }
 
-  .header-section div {
+  .header-section .div {
     width: 55%;
     height: 100%;
-    background-color: var(--background);
+    background-color: var(--text-color);
     display: flex;
     justify-content: start;
     align-items: center;
@@ -43,28 +43,46 @@
 
   .header-section .nav ul .link-list {
     width: 100%;
-  }
-
-  .header-section .nav ul .link-list .link span {
-    color: var(--text-color);
+    background-color: var(--text-color);
+    border: 1.5px solid var(--background);
   }
 
   .header-section .nav ul .link-list:hover .link span {
     color: var(--background);
   }
 
+  .nav ul .link-list .link span .select,
+  .nav ul .link-list .link ion-icon {
+    color: var(--background) !important;
+  }
+  .nav ul .link-list:hover .link span,
+  .nav ul .link-list:hover .link ion-icon {
+    color: var(--background) !important;
+  }
   .header-section.nav-active {
     transform: translateX(0%);
   }
 
   /* hero-section ---------------------- */
-  .section-mid {
-    & .container {
-      grid-template-columns: repeat(1, 1fr);
 
-      & .left-side {
-        align-items: center;
-        order: 1;
+  .hero-section {
+    & .theme-buttons {
+      top: 1.8%;
+      right: 12%;
+    }
+    & .section-top {
+      & .menu-bar {
+        display: block;
+      }
+    }
+    & .section-mid {
+      & .container {
+        grid-template-columns: repeat(1, 1fr);
+
+        & .left-side {
+          align-items: center;
+          order: 1;
+        }
       }
     }
   }
@@ -163,6 +181,7 @@
   .section-mid {
     height: 70%;
     & .container {
+      gap: 2rem;
       & .left-side {
         & .heading span {
           text-align: center;
@@ -192,6 +211,23 @@
       & .social-link-card {
         height: 4rem;
         padding: 1rem;
+      }
+    }
+  }
+
+  .footer-section {
+    & .container {
+      & h4 {
+        font-size: 2rem;
+        margin-top: 2rem;
+      }
+
+      & .copyright {
+        font-size: 15px;
+      }
+
+      & .credits {
+        font-size: 14px;
       }
     }
   }
