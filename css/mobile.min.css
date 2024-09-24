@@ -31,7 +31,6 @@
   .header-section .div {
     width: 55%;
     height: 100%;
-    background-color: var(--text-color);
     display: flex;
     justify-content: start;
     align-items: center;
@@ -41,19 +40,28 @@
     width: 100%;
   }
 
-  .header-section .nav ul .link-list {
-    width: 100%;
-    background-color: var(--text-color);
-    border: 1.5px solid var(--background);
-  }
-
   .header-section .nav ul .link-list:hover .link span {
     color: var(--background);
   }
 
-  .nav ul .link-list .link span .select,
-  .nav ul .link-list .link ion-icon {
-    color: var(--background) !important;
+  .header-section {
+    & .nav {
+      & ul {
+        & .link-list {
+          width: 100%;
+          background-color: transparent;
+          border: 1.5px solid var(--background);
+          & .link {
+            & span {
+              color: var(--background);
+            }
+            & ion-icon {
+              color: var(--background);
+            }
+          }
+        }
+      }
+    }
   }
   .nav ul .link-list:hover .link span,
   .nav ul .link-list:hover .link ion-icon {

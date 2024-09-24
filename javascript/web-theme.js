@@ -4,6 +4,9 @@ const footerSection = document.querySelector(".footer-section");
 const sectionTitle = document.querySelectorAll(".section-title h2");
 const socialIcons = document.querySelectorAll(".social-icon");
 const buttons = document.querySelectorAll(".btn");
+const header = document.querySelector(".div");
+const link = document.querySelectorAll(".select");
+const icons = document.querySelectorAll(".icons");
 
 export function themeToggler() {
   let theme = localStorage.getItem("web-theme") || "dark";
@@ -27,6 +30,11 @@ export function themeToggler() {
       theme === "dark" ? "transparent" : "transparent";
     btn.style.color = theme === "dark" ? "#fff" : "#000";
   });
+
+  header.style.backgroundColor = theme === "dark" ? "#000" : "#fff";
+  header.style.color = theme === "dark" ? "#fff" : "#000";
+  link.forEach((l) => (l.style.color = theme === "dark" ? "#fff" : "#000"));
+  icons.forEach((i) => (i.style.color = theme === "dark" ? "#fff" : "#000"));
   button.addEventListener("click", () => {
     if (theme === "dark") {
       document.body.classList.remove("dark");
@@ -40,6 +48,11 @@ export function themeToggler() {
         btn.style.backgroundColor = "transparent";
         btn.style.color = "#000";
       });
+      header.style.backgroundColor = "#fff";
+      header.style.color = "#000";
+      link.forEach((l) => (l.style.color = "#000"));
+      icons.forEach((i) => (i.style.color = "#000"));
+
       localStorage.setItem("web-theme", "light");
       theme = "light";
     } else {
@@ -54,6 +67,10 @@ export function themeToggler() {
         btn.style.backgroundColor = "transparent";
         btn.style.color = "#fff";
       });
+      header.style.backgroundColor = "#000";
+      header.style.color = "#fff";
+      link.forEach((l) => (l.style.color = "#fff"));
+      icons.forEach((i) => (i.style.color = "#fff"));
       localStorage.setItem("web-theme", "dark");
       theme = "dark";
     }

@@ -217,7 +217,7 @@ img {
           }
 
           & ion-icon {
-            color: var(--text-color) !important;
+            color: var(--text-color);
           }
         }
       }
@@ -227,9 +227,9 @@ img {
         background: var(--gredient-color);
       }
       & .link-list:hover .link span,
-      .link ion-icon {
+      .link-list:hover .link ion-icon {
         transition: var(--transition);
-        color: var(--text-color) !important;
+        color: var(--background) !important;
       }
     }
   }
