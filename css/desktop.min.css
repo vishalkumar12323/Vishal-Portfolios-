@@ -13,6 +13,7 @@
   --red: #ff0000;
   --green: #18af04;
   --yellow: #ffd000;
+  --blue: #0077ff;
   --transition: 0.5s;
   --space-x-y: 16px;
 }
@@ -398,6 +399,7 @@ img {
 }
 
 .progress .progress-bar {
+  --text-color: #cfcfcf;
   width: 100%;
   height: 7px;
   margin: 5px 0px;
@@ -410,13 +412,12 @@ img {
 }
 
 .blue {
-  color: var(--bg-color);
+  color: var(--blue);
   margin-top: 4px;
 }
 
 .green {
   color: var(--green);
-  /* box-shadow: var(--green) 0px 5px 10px; */
 }
 
 .yellow {
