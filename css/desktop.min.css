@@ -7,24 +7,19 @@
   font-family: "Open Sans", sans-serif;
 }
 
-/* #f5f6fa */
 :root {
   --text-color: #fff;
-  --bg-color: #17c0eb;
-  --secondary-bg-color: #18dcff;
   --background: #0e0e0e;
   --red: #ff0000;
   --green: #18af04;
   --yellow: #ffd000;
   --transition: 0.5s;
   --space-x-y: 16px;
-  --txt-shadow: 2px 1px 2px var(--bg-color);
-  --gredient-color: linear-gradient(90deg, #18dcff, #17c0eb);
 }
 
 ::selection {
-  color: var(--secondary-bg-color);
-  background-color: transparent;
+  color: var(--text-color);
+  background-color: var(--background);
 }
 
 body {
@@ -61,16 +56,6 @@ img {
 }
 
 /* Reuseable Classes --------------------- */
-
-.dark {
-  background-color: var(--background);
-  color: #ffffff;
-}
-
-.light {
-  background-color: #fff;
-  color: var(--background);
-}
 
 .active {
   color: var(--text-color);
@@ -113,8 +98,7 @@ img {
   align-items: center;
   position: relative;
   text-transform: uppercase;
-  color: var(--text-color);
-  text-shadow: var(--txt-shadow);
+  color: var(--background);
 }
 
 .section-title h2::before {
@@ -124,7 +108,7 @@ img {
   width: 100px;
   height: 2px;
   margin: 0 auto;
-  background-color: var(--text-color);
+  background-color: var(--background);
 }
 
 .section-title h2::after {
@@ -134,24 +118,29 @@ img {
   width: 45px;
   height: 2px;
   margin: 0 auto;
-  background-color: var(--bg-color);
+  background-color: var(--background);
 }
 
 .btn {
   padding: 8px 20px;
-  font-size: 20px;
+  font-size: 17px;
   outline: none;
   width: fit-content;
   text-transform: capitalize;
-  border: var(--bg-color) solid 0.1px;
+  border: var(--background) solid 0.1px;
+  color: var(--text-color);
+  background-color: var(--background);
   border-radius: 4px;
   transition: var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
 }
 
 .btn:hover {
   cursor: pointer;
-  color: var(--background) !important;
-  background: var(--gredient-color);
+  transform: translateY(-2px);
 }
 
 .top-button {
@@ -165,7 +154,7 @@ img {
   align-items: center;
   border: none;
   border-radius: 50%;
-  background: var(--gredient-color);
+  background: var(--background);
   cursor: pointer;
   transition: opacity 0.5s linear;
 }
@@ -200,9 +189,12 @@ img {
         transition: var(--transition);
         border-radius: 3px;
         background-color: var(--background);
-        box-shadow: 0px 1px 6px -3px var(--secondary-bg-color);
-        border: 1.5px solid var(--bg-color);
+        border: 1.5px solid transparent;
 
+        &:hover {
+          border: 1.5px solid var(--background);
+          background-color: var(--text-color);
+        }
         & .link {
           display: flex;
           width: 120px;
@@ -235,18 +227,11 @@ img {
   }
 }
 
-/* .nav ul .link-list .nav ul .link-list .link .nav ul .link-list:hover .link span,
-.nav ul .link-list:hover .link ion-icon {
-  color: var(--background);
-} */
-
 /* Hero-Section -------------------- */
 .hero-section {
-  --background: #020202;
   width: 100%;
   height: 100vh;
   position: relative;
-  background-color: var(--background);
 }
 
 .section-top {
@@ -258,23 +243,16 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  & .theme-buttons {
-    position: fixed;
-    top: 3%;
-    right: 3%;
-
-    & .t-btn {
-      border: none;
-      background-color: transparent;
-      cursor: pointer;
-    }
-  }
   & .menu-bar {
     display: none;
     position: fixed;
     right: 2%;
     top: 1.5%;
     cursor: pointer;
+
+    & ion-icon {
+      color: var(--background);
+    }
   }
 }
 
@@ -305,6 +283,18 @@ img {
         padding-left: 11px;
         & span {
           font-size: 1.3rem;
+        }
+        & #element {
+          letter-spacing: 1px;
+        }
+      }
+
+      & .btn {
+        justify-content: space-between;
+        width: 6.8rem;
+
+        &:hover {
+          width: 8.5rem;
         }
       }
     }
@@ -338,18 +328,22 @@ img {
       justify-content: space-between;
       align-items: center;
       padding: 0 1rem;
-      border: 0.5px solid var(--secondary-bg-color);
+      border: 0.5px solid var(--background);
       border-radius: 5px;
       transition: var(--transition);
     }
 
     & .social-link-card:hover {
-      background: var(--secondary-bg-color);
+      background: var(--background);
+      color: var(--text-color);
     }
 
+    & .social-link-card .social-icon {
+      color: var(--background);
+    }
     & .social-link-card:hover .social-icon {
-      color: var(--background) !important;
-      transition: var(--background);
+      color: var(--text-color);
+      transition: var(--transition);
     }
   }
 }
@@ -649,27 +643,26 @@ img {
 }
 
 .contact-section .contact-info .form ion-icon {
-  color: var(--bg-color);
-  border: var(--secondary-bg-color) solid 0.5px;
+  color: var(--background);
+  border: var(--background) solid 0.5px;
   padding: var(--space-x-y);
   border-radius: 50%;
-  background-color: var(--background);
   transition: var(--transition);
 }
 
 .contact-section .contact-info .form .address:hover ion-icon {
-  color: var(--background);
-  background-color: var(--secondary-bg-color);
+  color: var(--text-color);
+  background-color: var(--background);
 }
 
 .contact-section .contact-info .form .email:hover ion-icon {
-  color: var(--background);
-  background-color: var(--secondary-bg-color);
+  color: var(--text-color);
+  background-color: var(--background);
 }
 
 .contact-section .contact-info .form .phone:hover ion-icon {
-  color: var(--background);
-  background-color: var(--secondary-bg-color);
+  color: var(--text-color);
+  background-color: var(--background);
 }
 
 .contact-section .contact-form .user-info {
@@ -683,13 +676,15 @@ textarea {
   padding: 10px 5px;
   outline: none;
   border-radius: 4px;
-  border: var(--secondary-bg-color) solid 0.3px;
+  border: var(--background) solid 0.3px;
   transition: var(--transition);
 }
 
 .contact-section .contact-form input:focus,
 textarea:focus {
-  border: var(--bg-color) solid 1.5px;
+  border: var(--background) solid 0.3px;
+  box-shadow: 1px 1px 5px -2px #000;
+  transition: var(--transition);
 }
 
 .contact-section .contact-form .user-info {
@@ -707,10 +702,8 @@ textarea:focus {
 
 /* Footer Section ---------------- */
 .footer-section {
-  /* --background: #ffffff; */
-  --background: #020202;
   height: 35vh;
-  background: var(--background);
+  border-top: 1px solid var(--background);
 }
 
 .footer-section .container {
@@ -733,14 +726,18 @@ textarea:focus {
   justify-content: center;
   gap: 10px;
 }
+.footer-section .container .social-links a ion-icon {
+  color: var(--background);
+  transition: var(--transition);
+}
 
 .footer-section .container .social-links a ion-icon:hover {
-  color: var(--bg-color) !important;
+  color: var(--background) !important;
 }
 
 .footer-section .container .credits a {
   font-weight: 600;
-  color: var(--bg-color);
+  color: var(--background);
 }
 
 /* scroll-bar --------------- */

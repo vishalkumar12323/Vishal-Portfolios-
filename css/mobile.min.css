@@ -34,6 +34,7 @@
     display: flex;
     justify-content: start;
     align-items: center;
+    background-color: var(--text-color);
   }
 
   .header-section .nav {
@@ -49,7 +50,7 @@
       & ul {
         & .link-list {
           width: 100%;
-          background-color: transparent;
+          background-color: var(--text-color);
           border: 1.5px solid var(--background);
           & .link {
             & span {

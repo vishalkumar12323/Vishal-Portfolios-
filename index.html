@@ -13,7 +13,7 @@
     <title>Vishal Portfolios</title>
   </head>
 
-  <body class="">
+  <body>
     <header id="header" class="header-section">
       <div class="div">
         <nav id="navbar" class="nav">
@@ -50,9 +50,6 @@
     <!-- Hero Section ------------------------>
     <section class="hero-section">
       <div class="section-top">
-        <div class="theme-buttons">
-          <button class="t-btn"></button>
-        </div>
         <div class="menu-bar">
           <ion-icon name="reorder-four-outline" size="large"></ion-icon>
         </div>
@@ -67,11 +64,12 @@
 
             <p class="h-description">
               <span>I'm a</span>
-              <span>software developer</span>
+              <span id="element"></span>
             </p>
-            <a href="#" class="btn" style="margin-left: 11px; margin-top: 10px"
-              >Resume</a
-            >
+            <a href="#" class="btn" style="margin-left: 11px; margin-top: 10px">
+              <span>Resume</span>
+              <ion-icon name="arrow-forward" size="small"></ion-icon>
+            </a>
           </div>
           <div class="right-side">
             <img src="/images/profile-photo.jpeg " alt="vishal kumar" />
@@ -431,85 +429,20 @@
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
     ></script>
-    <!-- <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> -->
-    <!-- <script>
-    const type = new Typed("#element", {
-      strings: [
-        "web developer",
-        "javascript dev",
-        "react js dev",
-        "node js dev",
-        "freelancer",
-      ],
-    });
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      const type = new Typed("#element", {
+        strings: [
+          "web developer",
+          "javascript dev.",
+          "react js dev.",
+          "node js dev.",
+          "freelancer",
+        ],
+      });
 
-    type.typeSpeed = 100;
-    type.loop = true;
-  </script> -->
+      type.typeSpeed = 100;
+      type.loop = true;
+    </script>
   </body>
 </html>
-
-<!-- <i class="fa-solid fa-code"></i> -->
-<!-- <i class="fa-solid fa-house"></i> -->
-<!-- <i class="fa-solid fa-bars"></i> -->
-<!-- <i class="fa-solid fa-envelope"></i> -->
-<!-- <i class="fa-brands fa-linkedin"></i> -->
-<!-- <i class="fa-solid fa-location-dot"></i> -->
-<!-- <i class="fa-brands fa-square-github"></i> -->
-<!-- <i class="fa-solid fa-mobile"></i> -->
-<!-- <i class="fa-brands fa-slack"></i> -->
-<!-- <i class="fa-solid fa-moon"></i> -->
-<!-- <i class="fa-solid fa-sun"></i> -->
-<!-- <i class="fa-solid fa-chevron-up"></i> -->
-
-<!--  -->
-<!-- <ion-icon name="logo-github" size="large" class="social-icon"></ion-icon> -->
-<!--  -->
-<!-- <div class="link-box"></div>
-              <div class="link-card">
-                <a
-                  href=""
-                  class="s-link"
-                  target="_blank"
-                  ><ion-icon
-                    name="open-outline"
-                    size="large"
-                    class="social-icon"
-                  ></ion-icon
-                ></a>
-              </div>
-              <div class="link-card">
-                <ion-icon
-                  name="logo-linkedin"
-                  size="large"
-                  class="social-icon"
-                ></ion-icon>
-                <a
-                  href="https://www.linkedin.com/in/vishal-ninaniya/"
-                  target="_blank"
-                  class="s-link"
-                  ><ion-icon
-                    name="open-outline"
-                    size="large"
-                    class="social-icon"
-                  ></ion-icon
-                ></a>
-              </div>
-              <div class="link-card">
-                <ion-icon
-                  name="logo-twitter"
-                  size="large"
-                  class="social-icon"
-                ></ion-icon>
-                <a
-                  href=""
-                  class="s-link"
-                  target="_blank"
-                  ><ion-icon
-                    name="open-outline"
-                    size="large"
-                    class="social-icon"
-                  ></ion-icon
-                ></a>
-              </div>
-            </div> -->

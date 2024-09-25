@@ -1,7 +1,6 @@
 import projects from "./projects.json";
 import { card } from "./card";
 import { progressBar } from "./progress-bar";
-import { themeToggler } from "./web-theme";
 
 function init() {
   const mainSection = document.querySelector("#main");
@@ -10,8 +9,6 @@ function init() {
   buttonElement.classList.add("top-button");
   buttonElement.innerHTML = `<ion-icon name="chevron-up-outline"></ion-icon>`;
   document.body.appendChild(buttonElement);
-
-  themeToggler();
 
   // observering the skill-section when it's in viewport to load skills animation
   const skillSection = document.querySelector(".skills");
