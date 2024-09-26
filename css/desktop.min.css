@@ -112,16 +112,6 @@ img {
   background-color: var(--background);
 }
 
-.section-title h2::after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  width: 45px;
-  height: 2px;
-  margin: 0 auto;
-  background-color: var(--background);
-}
-
 .btn {
   padding: 8px 20px;
   font-size: 17px;
