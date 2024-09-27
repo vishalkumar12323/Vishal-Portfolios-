@@ -207,7 +207,6 @@ img {
 
       & .link-list:hover {
         width: 100%;
-        background: var(--gredient-color);
       }
       & .link-list:hover .link span,
       .link-list:hover .link ion-icon {
@@ -262,12 +261,13 @@ img {
       display: flex;
       justify-content: center;
       flex-direction: column;
+      animation: left-fade-in 2s linear;
+      transition: var(--transition);
 
       & .heading span {
         font-size: 4rem;
         font-weight: 700;
         text-transform: capitalize;
-        text-shadow: var(--txt-shadow);
       }
       & .h-description {
         padding-top: 10px;
@@ -293,6 +293,8 @@ img {
       display: flex;
       justify-content: center;
       align-items: center;
+      animation: right-fade-in 2s linear;
+      transition: var(--transition);
       img {
         width: 300px;
         height: 300px;
@@ -362,6 +364,7 @@ img {
   display: flex;
   flex-direction: column;
   width: 100%;
+  transition: var(--transition);
 }
 
 .box .title {
@@ -419,7 +422,7 @@ img {
 }
 
 .ts-logo {
-  background-color: var(--bg-color);
+  background-color: var(--blue);
   position: relative;
   border-radius: 3px;
 }
@@ -510,8 +513,8 @@ img {
   height: 40px;
   z-index: 1;
   opacity: 0;
-  border-top: 2px solid var(--bg-color);
-  border-left: 2px solid var(--bg-color);
+  border-top: 2px solid var(--background);
+  border-left: 2px solid var(--background);
   transition: var(--transition);
 }
 
@@ -524,8 +527,8 @@ img {
   height: 40px;
   z-index: 1;
   opacity: 0;
-  border-bottom: 2px solid var(--bg-color);
-  border-right: 2px solid var(--bg-color);
+  border-bottom: 2px solid var(--background);
+  border-right: 2px solid var(--background);
   transition: var(--transition);
 }
 
@@ -583,11 +586,7 @@ img {
 }
 
 .card-overlay .projects-links ion-icon {
-  color: var(--background);
-}
-
-.card-overlay .projects-links ion-icon:hover {
-  color: var(--bg-color);
+  color: var(--background) !important;
 }
 
 /* Contact Section ----------------- */
@@ -709,7 +708,6 @@ textarea:focus {
   font-size: 2.5rem;
   font-weight: 500;
   margin-top: 1rem;
-  text-shadow: var(--txt-shadow);
 }
 
 .footer-section .container .social-links {
@@ -741,11 +739,8 @@ textarea:focus {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--gredient-color);
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--secondary-bg-color);
+  background: var(--text-color);
+  border-radius: 5px;
 }
 
 .project-section .card-container::-webkit-scrollbar {

@@ -3,19 +3,24 @@ import { card } from "./card";
 import projects from "./projects.json";
 
 export class Observer {
-  constructor({ skillSection, mainSection, projectSection }) {
+  constructor({ skillSection, mainSection, projectSection, contactSection }) {
     this.skillSection = skillSection;
     this.mainSection = mainSection;
     this.projectSection = projectSection;
+    this.contactSection = contactSection;
   }
 
-  skillSectionObserver() {
+  skillSectionObserver(left, right) {
     const observer = new IntersectionObserver(
       (entry, obs) => {
         const [ent] = entry;
 
         if (!ent.isIntersecting) return;
-        progressBar();
+        left.style.animation = "left-fade-in 2s linear";
+        right.style.animation = "right-fade-in 2s linear";
+        setTimeout(() => {
+          progressBar();
+        }, 2000);
 
         obs.unobserve(this.skillSection);
       },
@@ -28,16 +33,16 @@ export class Observer {
     observer.observe(this.skillSection);
   }
 
-  mainSectionObserver(button) {
+  mainSectionObserver(element) {
     const observer = new IntersectionObserver(
       (entries) => {
         const [ent] = entries;
 
         if (!ent.isIntersecting) {
-          button.style.opacity = "0";
+          element.style.opacity = "0";
         } else {
-          button.style.opacity = "1";
-          button.addEventListener("click", () => {
+          element.style.opacity = "1";
+          element.addEventListener("click", () => {
             window.scrollTo({ behavior: "smooth", top: 0 });
           });
         }
@@ -65,5 +70,22 @@ export class Observer {
     );
 
     observer.observe(this.projectSection);
+  }
+
+  contactSectionObserver(left, right) {
+    const observer = new IntersectionObserver(
+      (entries, obs) => {
+        const [ent] = entries;
+
+        if (!ent.isIntersecting) return;
+        left.style.animation = "left-fade-in 2s linear";
+        right.style.animation = "right-fade-in 2s linear";
+
+        obs.unobserve(this.contactSection);
+      },
+      { root: null, threshold: 0 }
+    );
+
+    observer.observe(this.contactSection);
   }
 }
