@@ -20,7 +20,7 @@ export class Observer {
         right.style.animation = "right-fade-in 2s linear";
         setTimeout(() => {
           progressBar();
-        }, 2000);
+        }, 2500);
 
         obs.unobserve(this.skillSection);
       },
